@@ -1,0 +1,288 @@
+/*containers*/
+body{
+	font-family: 'PT Sans', sans-serif;
+	background:#000;
+	color:#908b90;
+	padding: 0px;
+	margin:0px;
+}
+
+.header{
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(
+      rgba(22, 10, 22, 0.75), 
+      rgba(22, 10, 22, 0.75)
+    ),url("../images/EngHallLR.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: fixed;
+	top: -100px;
+	z-index: -1;
+
+}
+
+span{
+	width: 100%;
+	top:200px;
+	position: absolute;
+	text-align: center;
+	
+}
+
+.wrapper{
+	width:70%;
+	margin: 0px auto;
+}
+
+.container{
+	width: 100%;
+	left:0px;
+	right: 0px;
+	margin:0px;
+	padding: 0px;
+	border: 1px solid #160a16;
+	border-style: solid none;
+}
+
+.margin{
+	width: 70%;
+	margin: 0px auto;	
+}
+
+/*navigation*/
+
+.navigation{
+	width: 100%;
+	height:40px;
+	top:0px;
+	left: 0px;
+	position: fixed;
+	background-color:  #160a16;
+	margin:0px;
+	padding:0px;
+	opacity: .7;
+	/*border-radius: 10px;
+	box-shadow: 5px 5px 5px #79727b;*/
+	z-index: 999;
+}
+
+.navigation li{
+	font-size: 1.33em;
+	border: 2px solid #fff;
+	border-style: none solid none none;
+	padding: 10px;
+}
+
+.navigation ul{
+	top:-10px;
+}
+
+
+.navigation img{
+	height:200px;
+	width: 200px;
+	border-radius: 100%;
+	float: right;
+	position: absolute;
+}
+
+
+/*basic styles*/
+
+ul{
+	
+	text-align: center;
+}
+
+li{
+	display: inline;
+	
+}
+a {
+	color: #908b90;
+}
+
+a:hover{
+	color: #fff;
+
+}
+h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 4.66em;
+	text-align: center;
+}
+
+h2{
+	
+	font-size: 4em;
+	text-align: center;
+}
+
+h3{
+	
+	font-size: 3.66em;
+	text-align: center;
+}
+
+h4{
+	
+	font-size: 3em;
+	text-align: center;
+}
+
+h5{
+	
+	font-size: 2.66em;
+	text-align: center;
+}
+
+h6{
+	
+	font-size: 2em;
+	text-align: center;
+}
+
+p{
+	font-size: 1.33em;
+
+}
+
+strong{
+	font-weight: bold;
+}
+
+
+/*panels*/
+
+#about{
+	margin-top: 400px;
+}
+
+#places{}
+#experience{}
+.panel-solid{
+	background-color: #211f21;
+
+	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=211f21ff&noise=626262&density=75&opacity=5");
+	background-repeat: repeat;
+	padding: 5px;
+}
+.panel-texture{
+	background-color: #31312f;
+	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=31312fff&noise=626262&density=75&opacity=25");
+	background-repeat: repeat;
+	padding: 5px;
+}
+
+.imgMe{
+	width: 50%;
+	bottom:0px; 
+	margin: 0px auto;
+}
+
+.imgMe img{
+	width: inherit;
+	height: auto;
+}
+
+.BotLeft{
+	position: fixed;
+	left: 0px;
+	bottom:0px;
+}
+
+.BotLeft img{
+	height:200px;
+	width: 200px;
+	border-radius: 100%;
+}
+
+
+.TopRight{
+	position: fixed;
+	
+	right:0px;
+	top:0px;
+}
+
+
+.TopRight img{
+	height:100px;
+	width: 100px;
+	border-radius: 100%;
+}
+
+img{
+	display: block;
+	margin:0 auto;
+}
+
+.caption{
+	font-size: 1em;
+	display: inherit;
+	position: relative;
+	top:inherit;
+	bottom:inherit;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+/*slideshow*/
+
+#slideshow {
+	height:400px;
+	background-color: #160a16;
+	margin:0px auto;
+	margin-bottom: 30px;
+	border-style: 1px solid #fff;
+}
+.slideshow-content{
+	height: inherit;
+}
+.slideshow-content img{
+	max-height:100%;
+	max-width: 100%;
+	}
+
+
+
+.slideshow-content p{
+	height: 10%;
+	background-color: #160a16;
+	opacity: .7;
+	padding:5px;
+	margin-top: -50px;
+	text-align: center;
+}
+
+#slideshow button{
+	display:inline-block;
+	background-color: #000;
+	color:#908b90;
+	border-radius: 30%;
+	border:1px solid #908b90;
+}
+
+#slideshow button:hover{
+	background-color: #f2f2f2;
+	color: #160a16;
+}
+
+
+#next{
+	float: right;
+}
+#past{
+	float: left;
+}
+.item{
+	visibility: hidden;
+}
+.active{
+	visibility: visible;
+	opacity: 1;
+}
+
