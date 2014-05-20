@@ -1,0 +1,118 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+	background:#000;
+	color:#908b90;
+	padding: 0px;
+	margin:0px;
+}
+
+.margin{
+	width: 950px;
+	margin: 0px auto;
+}
+
+span{
+	width: 100%;
+	top:200px;
+	position: absolute;
+	text-align: center;
+	
+}
+
+
+
+header{
+
+}
+
+footer{
+
+}
+
+sidebar{
+	position: absolute;
+	float:left;
+	width: 200px;
+	background-color: #f2f2f2;
+	border-style: 3px solid #f2f2f2;
+}
+sidebar li{
+	display: block;
+	padding-top: 5px;
+}
+
+span{
+
+}
+
+
+/*basic styles*/
+
+ul{
+	
+	text-align: center;
+}
+
+li{
+	display: inline;
+	
+}
+a {
+	color: #908b90;
+}
+
+a:hover{
+	color: #fff;
+
+}
+h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 4.66em;
+	text-align: center;
+}
+
+h2{
+	
+	font-size: 4em;
+	text-align: center;
+}
+
+h3{
+	
+	font-size: 3.66em;
+	text-align: center;
+}
+
+h4{
+	
+	font-size: 3em;
+	text-align: center;
+}
+
+h5{
+	
+	font-size: 2.66em;
+	text-align: center;
+}
+
+h6{
+	
+	font-size: 2em;
+	text-align: center;
+}
+
+p{
+	font-size: 1.33em;
+
+}
+
+
+#academic{
+
+}
+
+#survival{}
+
+#people{
+
+}
