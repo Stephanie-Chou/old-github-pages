@@ -1,0 +1,51 @@
+
+
+section{
+	width:100%;
+	min-height:100%;
+	float: left;
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+nav li{
+	display: inline-block;
+	padding-left: 5px;
+	color: white;
+}
+nav li a{
+	color: white;
+}
+
+nav li a:hover{
+	color: purple;
+}
+#home{
+	background-image: url("../images/beachLR.png");
+	background-size: cover;
+}
+#about{
+	background-color: blue;
+}
+
+#places{
+	background-color:gray;
+}
+
+#blog{
+	background-color: blue;
+}
+
+h1{
+	font-size: 3em;
+	line-height: 2em;
+	text-align: center;
+}
