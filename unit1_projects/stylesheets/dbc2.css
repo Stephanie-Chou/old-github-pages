@@ -29,9 +29,15 @@ header{
 }
 
 footer{
+	width: 100%;
+	background-color:#0090ff; 
+	bottom: 0px;
 
 }
+footer p{
+	text-align: center;
 
+}
 sidebar{
 	position: fixed;
 	float:left;
