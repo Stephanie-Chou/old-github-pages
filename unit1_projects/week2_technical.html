@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Blog Template</title>
+	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+</head>
+	<header><h1>My Blog</h1></header>
+<body>
+
+		
+		<div class="archive">
+			<p>Archive<p>
+
+			<ul>
+				<li> <a href="#positions">Relative, absolute and Fixed Positioning</a></li>
+			</ul>
+		</div>
+
+	<div class="margin">
+
+		<div id="positions" class="post text">
+			<div class="margin">
+				<h2>What are the differences between relative, absolute, and fixed positioning</h2>
+				
+				
+
+				<h3>Relative</h3>
+				<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them. The below rectangle and circle are relative</p>
+				<div class="relative white rectangle">
+					<div class="relative blue rectangle"><p><font color="#000">relative!</font></p></div>
+					<div class="relative circle"></div>
+					
+				</div>
+				<h3>Absolute</h3>
+				<p> Absolute objects are positioned relative to the parent container. Absolute positioned objects are often used within a relatively positioned object. An absolute object is out of the 'normal' flow of the page. Objects positioned within the normal flow of the page after an absolute object will overlap the absolute object. The below blue rectangle is absolute while the black circle is relative.</p>
+				
+				<div class="relative white rectangle"><div class="absolute blue rectangle"><p><font color="#000">absolute!</font></p></div>
+					<div class="relative circle"></div></div>
+				
+
+				<h3>Fixed</h3>
+				<p>A fixed position object will not move even if the page is scrolled. This is because the object is fixed relative to the browser window. The below rectangle is fixed
+				<div class="fixed blue rectangle"><p><font color="#000">fixed!</font></p></div>
+				</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

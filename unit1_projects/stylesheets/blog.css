@@ -51,6 +51,40 @@ header{
 	
 }
 
+.circle{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: black;
+}
+.rectangle{
+	height: 100px;
+	width: 200px;
+	background-color: black;
+
+}
+.blue{
+	background-color: blue;
+
+}
+.white{
+	background-color: white;
+	height: 200px;
+	width: 400px;
+}
+.fixed{
+	position: fixed;
+	bottom: 0px;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.relative{
+	position: relative;
+}
+
 a{
 	color: #fff;
 }
