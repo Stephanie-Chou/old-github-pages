@@ -18,13 +18,15 @@ section{
 .wrapper{
 	width:70%;
 	margin: 0px auto;
+	
 }
 nav{
-	background-color: black;
+	background-color: #109d61;
 	position: fixed;
 	width: 100%;
 	height: 60px;
 	text-align: center;
+	opacity: .6;
 }
 nav li{
 	display: inline-block;
@@ -58,9 +60,10 @@ li a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 #about{
 	background-image: url("../images/stephanie2_med.png");
-	background-color: #211f21;
+	background-color: #175e94 ;
 	background-size: 40%;
 	background-position: bottom left;
 	background-repeat: no-repeat;
@@ -70,12 +73,13 @@ li a:hover{
 }
 
 #places{
-	background-color:gray;
+	background-image: url("../images/graynoise.png");
+	background-repeat: repeat;
 	color: #000;
 }
 
 #blog{
-	background-color: #211f21;
+	background-color:  #175e94;
 	text-align: center;
 }
 
