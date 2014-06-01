@@ -90,8 +90,7 @@ h1{
 }
 
 #places img{
-	width: 27%;
-	margin:1%;
+	width: 33%;
 	height: auto;
 }
 @media (max-width: 480px){

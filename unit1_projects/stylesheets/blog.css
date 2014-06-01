@@ -14,7 +14,7 @@ header{
 }
 
 nav{
-	width: 13%;
+	min-width: 13%;
 	float: left;
 	position: relative;
 	background-color:#109d61;
@@ -35,15 +35,40 @@ nav p{
 
 article{
 	display: block-inline;
-	width: 950px;
+	width: 70%;
 	background-color: #175e94 ;
 	border-radius: 0px;
 	box-shadow: 5px 5px 5px #042f4f;
 	min-height: 300px;
-	margin-bottom: 30px; 
+	margin:0 auto;
 	padding: 15px;
 }
 
+
+@media (max-width: 960px){
+	article{
+		
+		margin: 0 auto;
+		width: 90%;
+	}
+	h1{
+	font-size: 3.33em;
+	text-align: center;
+	line-height: 2.33em;
+
+	}
+
+	h2{
+		font-size: 2.33em;
+		line-height: 1.66 em;
+	}
+
+	h3{
+		font-size: 1.66em;
+		line-height: 1em;
+	}
+	
+}
 
 article img{
 	display: inline;
@@ -107,6 +132,11 @@ h1{
 h2{
 	font-size: 2.33em;
 	line-height: 2.33em;
+}
+
+h3{
+	font-size: 1.66em;
+	line-height: 1em;
 }
 
 p{
