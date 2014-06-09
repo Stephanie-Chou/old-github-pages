@@ -90,8 +90,10 @@ h1{
 }
 
 #places img{
-	width: 33%;
+	width: 49%;
 	height: auto;
+	margin:0px;
+	padding:0px;
 }
 @media (max-width: 480px){
 	section{
@@ -103,7 +105,7 @@ h1{
 	padding: 0px;
 	}
 	#places img{
-	width: 80%%;
+	width: 80%;
 	margin:1%;
 	height: auto;
 	display: block;
