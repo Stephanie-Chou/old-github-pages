@@ -5,6 +5,7 @@
 	<title>DBC Technical Blog</title>
 	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 </head>
 	<header><h1>DBC Technical Blog</h1></header>
 <body>
@@ -14,7 +15,7 @@
 			<p>Archive<p>
 
 			<ul>
-				<p> Cultural </p>
+				<p> Technical </p>
 
 				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">Week One: Websites</a></li>
 				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">Week Two:</a></li>
@@ -37,6 +38,28 @@
 <li> <strong>Class: </strong> A way of organizing information and producing new objects. Ruby has some built in classes we're already familiar with such as Array.</li>
 <li> <strong> Object: </strong> Objects are instances of a class. </li>
 <li> <strong> Instance Variable: </strong> You can identify an instance variable because they are preceded with an '@' symbol. Instance variables are tied to the instance of a class. </li>
+
+<p> Here is an example of using the instance variables and instance methods within one of this weeks challenges. Lets start with 1_die because that was a simpler challenge</p>
+	<pre class="prettyprint lang-ruby">
+
+		class Die
+			def initialize(sides)
+	    		raise ArgumentError.new(" Must have at least 1 side") if sides [lessthan] 1
+	    			@die_sides= sides
+    			end 
+    		end
+  			def sides
+    			@die_sides
+  			end
+  			def roll
+    			1+rand(@die_sides)
+  			end
+		end
+	</pre>
+
+<p> Here you can see that we only have one instance variable called @die_sides. This is a variable that can change with each instance of the class Die. For example, calling die=Die.new(6) will create the instance variable @die_sides=6. This @die_sides is a unique variable and value to die. If you delete die, then that instance of @die_sides will no longer exist.</p> 
+<p>	def sides and def roll are instance methods. Like instance variables, these methods are attached to the instance of the class. When you call sides or roll on our newly created die instance, you will get a unique output.</p>
+
 			</div>
 		</div>
 
