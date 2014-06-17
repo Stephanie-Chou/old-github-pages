@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<title>DBC Cultural Blog</title>
-	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
-	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
-</head>
-<body>
-include_once('navigation.php')
-		
-<!-- 		<nav>
+		<nav>
 			<h4>Archive</h4>
 
 			<ul>
@@ -28,18 +17,4 @@ include_once('navigation.php')
 				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_cultural.html">Week Five</a></li>
 				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_cultural.html">Week Six:</a></li>
 			</ul>
-		</nav> -->
-
-	<div class="margin">
-
-		<article id="positions" class=" text">
-			<div class="margin">
-				<h2> The Stereotype Threat</h2>
-					<p> I actually touched on this subject in a previous blog post when I wrote about an issue that the tech industry faces which is a lack of women.</p>
-
-			</div>
-		</div>
-
-	</article>
-</body>
-</html>
+		</nav>
