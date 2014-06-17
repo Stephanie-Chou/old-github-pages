@@ -50,6 +50,10 @@ nav p{
 	color: #109d61;
 	text-align: center;
 }
+
+nav h4{
+	text-align: center;
+}
 .margin{
 	width:70%;
 	margin: 0 auto;
@@ -59,8 +63,7 @@ article{
 	display: block-inline;
 	width: 70%;
 	background-color: #fff ;
-	border-radius: 0px;
-	box-shadow: 5px 5px 5px #042f4f;
+	/*box-shadow: 5px 5px 5px #042f4f;*/
 	min-height: 300px;
 	margin-left: 25%;
 	padding: 15px;
@@ -69,14 +72,14 @@ article{
 
 @media (max-width: 640px){
 	article{
-		margin: 10% auto;
-		width: 90%;
+		margin: auto;
+		width: 95%;
 	}
+
 	h1{
 	font-size: 3.33em;
 	text-align: center;
 	line-height: 2.33em;
-
 	}
 
 	h2{
