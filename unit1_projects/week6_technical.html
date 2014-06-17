@@ -41,16 +41,12 @@
 					<li> Reuse of Classes: Classes definitions are reusable by the progam it is originally written for as well as other object oriented programs. They can be reused!</li>
 					<li> New data types: Programmers can make new data types. These data types can be used to define data more clearly </li>
 					<li> inheritance: A class can have subclasses. This makes organization of data and information easier. It reduces development time</li>
+					<p> The following example is OOP.</p>
 					<pre class="prettyprint lang-ruby">
 						class BoggleBoard
 
 							def initialize(grid)
 								@boggle_board=grid
-							end
-
-							def create_word(*coords)
-
-							coords.map { |coord| @boggle_board[coord.first][coord.last]}.join("")
 							end
 
 							def get_row(row)
@@ -67,6 +63,17 @@
 
 						end
 
+						# create a new instance of Boggle Board
+						dice_grid = [["b", "r", "a", "e"],
+						             ["i", "o", "d", "t"],
+						             ["e", "c", "l", "r"],
+						             ["t", "a", "k", "e"]]
+						 
+						boggle_board = BoggleBoard.new(dice_grid)
+						print boggle_board.get_col(0)
+						print boggle_board.get_row(0)
+
+
 					</pre>
 					<h4> Functional Programming</h4>
 
@@ -79,6 +86,31 @@
 					<li> Lack of side effects: Side effects means that the execution of a function can change the state of some other function or the outside world. Side effects are the most common way that a program interacts with users or external systems</li>
 
 					<pre class="prettyprint lang-ruby">
+						boggle_board = [["b", "r", "a", "e"],
+						                ["i", "o", "d", "t"],
+						                ["e", "c", "l", "r"],
+						                ["t", "a", "k", "e"]]
+						def get_row(board,row)
+						
+						    return row>board.length-1 ? nil : board[row]
+						end
+
+						def get_col(board, col)
+						
+
+						    column=[]
+						    board.each do |row|
+						        column.push(row[col])   
+						    end
+						    return col>board.size-1 ? nil : column
+						end
+
+						# calling the methods means you have to pass the board into the method
+						# the methods are not directly related to the boggle_board
+
+						print get_row(boggle_board, 3)
+						print get_col(boggle_board, 2)
+
 					</pre>
 			</div>
 		</div>
