@@ -39,6 +39,7 @@ nav{
 	top: 0px;
 	padding-right: 20px;
 	background-color: #C1C6D2;/*#109d61;*/
+	z-index: 99;
 
 }
 
@@ -54,10 +55,10 @@ nav p{
 nav h4{
 	text-align: center;
 }
-.margin{
+/*.margin{
 	width:70%;
 	margin: 0 auto;
-}
+}*/
 
 article{
 	display: block-inline;
@@ -65,15 +66,17 @@ article{
 	background-color: #fff ;
 	/*box-shadow: 5px 5px 5px #042f4f;*/
 	min-height: 300px;
-	margin-left: 25%;
+	margin-left: 20%;
 	padding: 15px;
+	z-index: -1;
+	opacity: .8;
 }
 
 
-@media (max-width: 640px){
+@media (max-width: 960px){
 	article{
-		margin: auto;
-		width: 95%;
+		margin: 90px auto;
+		width: 80%;
 	}
 
 	h1{
@@ -175,7 +178,7 @@ a:visited {
 }
 
 a:hover {
-	color: #109d61;
+	color: #fff;
 }
 
 
