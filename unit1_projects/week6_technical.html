@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>DBC Cultural Blog</title>
+	<title>DBC Technical Blog</title>
 	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
 </head>
@@ -43,35 +43,35 @@
 					<li> inheritance: A class can have subclasses. This makes organization of data and information easier. It reduces development time</li>
 					<p> The following example is OOP.</p>
 					<pre class="prettyprint lang-ruby">
-						class BoggleBoard
+	class BoggleBoard
 
-							def initialize(grid)
-								@boggle_board=grid
-							end
+		def initialize(grid)
+			@boggle_board=grid
+		end
 
-							def get_row(row)
-								return row>@boggle_board.length-1 ? nil : @boggle_board[row]
-							end
+		def get_row(row)
+			return row>@boggle_board.length-1 ? nil : @boggle_board[row]
+		end
 
-							def get_col(col)
-								column=[]
-								@boggle_board.each do |row|
-							    	column.push(row[col])   
-								end
-								return col>@boggle_board.size-1 ? nil : column
-							end
+		def get_col(col)
+			column=[]
+			@boggle_board.each do |row|
+		    	column.push(row[col])   
+			end
+			return col>@boggle_board.size-1 ? nil : column
+		end
 
-						end
+	end
 
-						# create a new instance of Boggle Board
-						dice_grid = [["b", "r", "a", "e"],
-						             ["i", "o", "d", "t"],
-						             ["e", "c", "l", "r"],
-						             ["t", "a", "k", "e"]]
-						 
-						boggle_board = BoggleBoard.new(dice_grid)
-						print boggle_board.get_col(0)
-						print boggle_board.get_row(0)
+	# create a new instance of Boggle Board
+	dice_grid = [["b", "r", "a", "e"],
+	             ["i", "o", "d", "t"],
+	             ["e", "c", "l", "r"],
+	             ["t", "a", "k", "e"]]
+	 
+	boggle_board = BoggleBoard.new(dice_grid)
+	print boggle_board.get_col(0)
+	print boggle_board.get_row(0)
 
 
 					</pre>
@@ -86,30 +86,32 @@
 					<li> Lack of side effects: Side effects means that the execution of a function can change the state of some other function or the outside world. Side effects are the most common way that a program interacts with users or external systems</li>
 
 					<pre class="prettyprint lang-ruby">
-						boggle_board = [["b", "r", "a", "e"],
-						                ["i", "o", "d", "t"],
-						                ["e", "c", "l", "r"],
-						                ["t", "a", "k", "e"]]
-						def get_row(board,row)
-						
-						    return row>board.length-1 ? nil : board[row]
-						end
+					
+	boggle_board = [["b", "r", "a", "e"],
+	                ["i", "o", "d", "t"],
+	                ["e", "c", "l", "r"],
+	                ["t", "a", "k", "e"]]
+	def get_row(board,row)
 
-						def get_col(board, col)
-						
+	    return row>board.length-1 ? nil : board[row]
+	end
 
-						    column=[]
-						    board.each do |row|
-						        column.push(row[col])   
-						    end
-						    return col>board.size-1 ? nil : column
-						end
+	def get_col(board, col)
 
-						# calling the methods means you have to pass the board into the method
-						# the methods are not directly related to the boggle_board
 
-						print get_row(boggle_board, 3)
-						print get_col(boggle_board, 2)
+	    column=[]
+	    board.each do |row|
+	        column.push(row[col])   
+	    end
+	    return col>board.size-1 ? nil : column
+	end
+
+	# calling the methods means you have to pass the board into the method
+	# the methods are not directly related to the boggle_board
+
+	print get_row(boggle_board, 3)
+	print get_col(boggle_board, 2)
+
 
 					</pre>
 			</div>

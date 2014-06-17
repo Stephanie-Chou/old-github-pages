@@ -43,19 +43,19 @@
 <p> Here is an example of using the instance variables and instance methods within one of this weeks challenges. Lets start with 1_die because that was a simpler challenge</p>
 	<pre class="prettyprint lang-ruby">
 
-		class Die
-			def initialize(sides)
-	    		raise ArgumentError.new(" Must have at least 1 side") if sides [lessthan] 1
-	    			@die_sides= sides
-    			end 
-    		end
-  			def sides
-    			@die_sides
-  			end
-  			def roll
-    			1+rand(@die_sides)
-  			end
+	class Die
+		def initialize(sides)
+			raise ArgumentError.new(" Must have at least 1 side") if sides [lessthan] 1
+				@die_sides= sides
+			end 
 		end
+			def sides
+			@die_sides
+			end
+			def roll
+			1+rand(@die_sides)
+			end
+	end
 	</pre>
 
 <p> Here you can see that we only have one instance variable called @die_sides. This is a variable that can change with each instance of the class Die. For example, calling die=Die.new(6) will create the instance variable @die_sides=6. This @die_sides is a unique variable and value to die. If you delete die, then that instance of @die_sides will no longer exist.</p> 
