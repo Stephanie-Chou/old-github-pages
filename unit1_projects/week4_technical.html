@@ -34,12 +34,30 @@
 			<div class="margin">
 				<h2>Arrays vs Hashes</h2>
 				<h3>Arrays </h3>
-				<p> Array elements are accessed by indices. This is why arrays are good for look ups (searching for information). Arrays allow you to store information of the same datatype into a single variable</p>
+				<p> Array elements are accessed by indices. This is why arrays are good for look ups (searching for information). Arrays allow you to store information of the same datatype into a single variable. In Ruby, an array doesn't have to contain elements of the same datatype</p>
+				<pre class="prettyprint lang-ruby">
+	array=[1,'hello', 0, true]
+	array.length # => 4
+	array[0] #=>1
+				<pre>
 
 				<h3>Hashes</h3>
-				<p> In a hash table, you can set the values and keys to anything you like. You can search by strings, numbers or objects! That's a lot of freedom</p>
+				<p> Hash tables are a collection of key value pairs. In a hash table, you can set the values and keys to anything you like. You can search by strings, numbers or objects! That's a lot of freedom</p>
 				<p> Another benefit of hashes is timing. Often, making code faster is better! Fast code is evaluated by runtimes. Hashtables have faster runtimes than arrays for insertions, searches, </p>
-				
+				<pre class="prettyprint lang-ruby">
+	hash=Hash.new()
+
+	# or
+
+	hash={}
+
+	h={
+		"a"=> 100
+		"b"=> 200
+	}
+
+	h["a"] #=> 100
+				<pre>
 			</div>
 		</article>
 
