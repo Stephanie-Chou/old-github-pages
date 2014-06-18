@@ -212,3 +212,9 @@ p{
 	margin-top: 5px;
 	padding-top: 15px;
 }
+
+.date{
+	text-transform: uppercase;
+	color: #109d61;
+
+}
