@@ -63,7 +63,7 @@ li a:hover{
 
 #about{
 	background-image: url("../images/stephanie2_med.png");
-	background-color: #175e94 ;
+	background-color: #000;/* #175e94 ;*/
 	background-size: 40%;
 	background-position: bottom left;
 	background-repeat: no-repeat;
