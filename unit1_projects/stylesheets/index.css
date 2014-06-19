@@ -96,7 +96,9 @@ span h1{
 
 #blog{
 	background: url("../images/baybridge.png") center right fixed;
+	background-size: cover;
 	background-repeat: no-repeat;
+
 	background-color: #000;
 }
 
