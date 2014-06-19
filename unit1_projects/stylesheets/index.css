@@ -204,12 +204,7 @@ p{
 }
 
 @media (min-device-width : 320px) and (max-device-width : 480px){
-	#blog{
-	background: url("../images/baybridge.png") center right fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-color: #000;
-	}
+
 
 	li{
 		font-size: 1em;
