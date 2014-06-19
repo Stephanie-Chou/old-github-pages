@@ -96,7 +96,6 @@ span h1{
 
 #blog{
 	background: url("../images/baybridge.png") center right fixed;
-	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #000;
 }
@@ -106,8 +105,6 @@ span h1{
 	height: 100%;
 	width: 20%;
 	float: left;
-
-	position: absolute;
 	padding-right: 20px;
 	background-color: #C1C6D2;/*#109d61;*/
 	z-index: 99;
@@ -124,6 +121,7 @@ span h1{
 	color: #109d61;
 	text-align: center;
 	display: none;
+
 }
 
 #blog nav h4{
@@ -215,6 +213,14 @@ p{
 	li{
 		font-size: 1em;
 	}
+	p{
+		font-size: 1.66em;
+		line-height: 1.66em;
+	}
+	.content{
+	float: left;
+	width: 45%;
+}
 
 }
 
