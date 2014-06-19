@@ -94,9 +94,9 @@ span h1{
 
 
 #blog{
-	background: url("../images/baybridge.png");
+	background: url("../images/baybridge.png") fixed;
 	background-size: cover;
-	background-position: top right fixed;
+	background-position: top right;
 	background-repeat: no-repeat;
 	background-color: #000;
 }
@@ -207,6 +207,7 @@ p{
 	#blog{
 	background: url("../images/baybridge.png") top right fixed;
 	background-size: contain;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-color: #000;
 	}
