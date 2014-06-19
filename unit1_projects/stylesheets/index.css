@@ -102,11 +102,12 @@ span h1{
 }
 
 #blog nav{
+
 	height: 100%;
 	width: 20%;
 	float: left;
-	left:0px;
-	top: 0px;
+
+	position: absolute;
 	padding-right: 20px;
 	background-color: #C1C6D2;/*#109d61;*/
 	z-index: 99;
@@ -140,13 +141,15 @@ article{
 	display: block-inline;
 	width: 70%;
 	background-color: #fff ;
+		opacity: .8;
+
 	/*box-shadow: 5px 5px 5px #042f4f;*/
 	min-height: 300px;
 	margin-left: 20%;
 	margin-top: 10%;
 	padding: 15px;
 	z-index: -1;
-	opacity: .8;
+	
 }
 
 article img{
@@ -204,7 +207,7 @@ p{
 @media (min-device-width : 320px) and (max-device-width : 480px){
 	#blog{
 	background: url("../images/baybridge.png") center right fixed;
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: #000;
 	}
@@ -240,7 +243,11 @@ p{
 		font-size: 2.33em;
 		line-height: .33em;	
 	}
-
+	article{
+		margin: 90px auto;
+		width: 80%;
+		z-index: -1;
+	}
 
 	#blog nav{
 		width: 100%;
