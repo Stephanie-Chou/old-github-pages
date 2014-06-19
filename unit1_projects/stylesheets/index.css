@@ -149,6 +149,13 @@ article{
 	opacity: .8;
 }
 
+article img{
+	display: inline;
+	padding: 10px;
+	height: 150px;
+	
+}
+
 #places{
 	background-image: url("../images/graynoise.png");
 	background-repeat: repeat;
