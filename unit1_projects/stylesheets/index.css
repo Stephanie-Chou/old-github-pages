@@ -63,7 +63,6 @@ li a:hover{
 /*	background-image: url("../images/stephanie2_med.png");*/	
 	background-image: url("../images/beach.png");
 	background-color: #000;/* #175e94 ;*/
-	/*background-size: 40%;*/
 	background-size: cover;
 	background-position: top right;
 	background-repeat: no-repeat;
@@ -95,11 +94,10 @@ span h1{
 
 
 #blog{
-	background: url("../images/baybridge.png") top right fixed;
-	
+	background: url("../images/baybridge.png") fixed;
 	background-size: cover;
+	background-position: top right;
 	background-repeat: no-repeat;
-
 	background-color: #000;
 }
 
