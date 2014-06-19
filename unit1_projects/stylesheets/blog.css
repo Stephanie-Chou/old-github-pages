@@ -45,15 +45,24 @@ nav{
 
 nav li{
 	padding: 10px;
+	display: none;
 }
 nav p{
 	text-transform: uppercase;
 	color: #109d61;
 	text-align: center;
+	display: none;
 }
 
 nav h4{
 	text-align: center;
+}
+
+nav:hover li{
+	display: block;
+}
+nav:hover p{
+	display: block;
 }
 /*.margin{
 	width:70%;
@@ -112,7 +121,7 @@ article{
 		height: auto;
 	}
 	nav:hover li{
-		display: inline-block;
+		display: inline;
 
 	}
 	nav:hover p{
