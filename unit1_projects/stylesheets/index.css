@@ -201,6 +201,20 @@ p{
 	padding-top: 15px;
 }
 
+@media (min-device-width : 320px) and (max-device-width : 480px){
+	#blog{
+	background: url("../images/baybridge.png") center right fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+	}
+
+	li{
+		font-size: 1em;
+	}
+
+}
+
 
 @media (max-width: 940px){
 	section{
