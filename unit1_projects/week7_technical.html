@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DBC Technical Blog</title>
+	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+</head>
+		
+<body>	
+		<nav>
+			<h4>Archive</h4>
+
+			<ul>
+				<p> Technical </p>
+				
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">Week One:Websites</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">Week Two: Positioning</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_technical.html">Week Three: Why JavaScript</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_technical.html">Week Four: Arrays vs Hashes</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_technical.html">Week Five: Instance Everything</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_technical.html">Week Six:OOP</a></li>
+				
+				<p> Cultural </p>
+				
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_cultural.html">Week One: DBC</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_cultural.html">Week Three: Learning Style</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_cultural.html">Week Four: Tech Needs Women</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_cultural.html">Week Five: Peer Pairing</a></li>
+					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_cultural.html">Week Six: Dangerous Stereotypes</a></li>
+				
+			</ul>
+		</nav>
+
+	<div class="margin">
+
+		<article id="positions" class=" text">
+			<div class="margin">
+				<p class="date">June 23, 2014</p>
+				<h2> SQL Injection and Prevention</h2>
+				<h4> What is SQL Inject?</h4>
+				<p>SQL injection is a way of attacking a database. The malicious DQL code is intended to fool the application and convince it that it wants to run the malicious code which will cause unintended results.
+				For example, the original code may look like
+				<pre lang='sql'>SELECT first_name FROM directory WHERE last_name='chang' '; </pre>
+
+				Here, <pre lang='sql'>'chang' </pre>is the intended input but there is an extra closing quotation mark which leaves the code open for exploitation. A SQL injection would take advantage of the extra quotation and write:
+
+				<pre lang='sql'>SELECT first_name FROM director WHERE last_name='chang' or '1' ='1';</pre>
+				Here, the users input is <pre lang='sql'>'chang' or '1'='1</pre>
+				This will always read as a true statement and therefore, no matter what- that line of SQL code will return whatever the malicious code is seeking.
+				</p>
+
+				<p> The comic also shows another SQL injection attack</p>
+				<img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png">
+
+
+				<p> SQL injection attacks are the most common kind of attack because of their simplicity and because of the desirable nature of sensitive data.</p>
+				<h4> SQL injection prevention</h4>
+				<li> Limit or eliminate all user input based queries: User input feilds are a prime opportunity for SQL injection because attackers can write SQL code in an input field</li>
+				<li>Stored Procedures: </li>
+				<li> input validation techniques</li>
+				<li> Verify users and ensure the right people have the right permissions to be making database changes</li>
+
+
+
+				<p> To summarize, I found this very helpful infographic!<a href="<a href="//www.veracode.com/security/sql-injection%22%3E">http://www.veracode.com/security/sql-injection"></a> <img style="font-size: x-small;" src="<a href="//www.veracode.com/sites/default/files/styles/media_responsive_widest/public/sql-injection-ig.jpg%22">https://www.veracode.com/sites/default/files/styles/media_responsive_wid...</a> alt="Veracode SQL Injection Tutorial Infographic" /></a></p><p><a href="<a href="//www.veracode.com/%22%3EBy">http://www.veracode.com/">By</a> Veracode</a></p>
+				<p> References:</p>
+				<a href="http://www.veracode.com/security/sql-injection"> Veracode</a>	
+			</div>
+	</div>
+</body>
+</html>
