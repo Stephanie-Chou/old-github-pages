@@ -1,7 +1,6 @@
 
 body{
-/*	font-family: 'PT Sans', sans-serif;
-*/	font-family: 'Voltaire', sans-serif;
+
 	background color:#000;
 	color: #303134;
 	padding: 0px;
@@ -21,17 +20,19 @@ section{
 	margin: 0px auto;
 	
 }
-nav{
+/*nav{
 	background-color: #C1C6D2;
-	position: absolute fixed;
+	position:absolute;
 	width: 100%;
 	height: 60px;
 	text-align: center;
 	z-index: 99;
 }
 nav li{
-	display: inline-block;
-	padding-left: 5px;
+	display: inline;
+	float: left;
+	position: relative;
+	padding-left: 20px;
 	color: #109d61;
 }
 
@@ -42,9 +43,30 @@ nav li a:hover{
 	color: #109d61;
 }
 
- li{
+nav ul{
+	display: none;
+	position: absolute;
+	background-color: #C1C6D2;
+}
+
+nav ul li{
+	display: list-item;
+	list-style: none;
+	float: none;
+}
+
+nav li:hover ul{
+	width: 150px;
+	padding-right: 20px;
+	position: relative;
+	display: list-item;
+	z-index: 99;
+}
+
+li{
 	display: inline-block;
 	padding-left: 5px;
+	padding-bottom: 10px;
 	color: white;
 	text-align: center;
 }
@@ -52,9 +74,12 @@ nav li a:hover{
 
 li a:hover{
 	color: #109d61;
-}
+}*/
+
+
 #home{
 	background-image: url("../images/beachLR.png");
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -74,20 +99,20 @@ li a:hover{
 	width: 30%;
 }
 
-span{
+.opaque{
 	float: left;
 	padding: 20px;
-	margin: 20px;
+	margin: 40px;
 	width: 100%;
 	background-color:#000;
 	opacity: .8;
 	z-index: -1
 }
 
-span p{
+.opaque p{
 	color: #fff;
 }
-span h1{
+.opaque h1{
 	line-height: 1.33;
 }
 
@@ -101,40 +126,7 @@ span h1{
 	background-color: #000;
 }
 
-#blog nav{
 
-	height: 100%;
-	width: 20%;
-	float: left;
-	padding-right: 20px;
-	background-color: #C1C6D2;/*#109d61;*/
-	z-index: 99;
-
-}
-
-#blog nav li{
-	padding: 10px;
-	display: none;
-	text-align: left;
-}
-#blog nav p{
-	text-transform: uppercase;
-	color: #109d61;
-	text-align: center;
-	display: none;
-
-}
-
-#blog nav h4{
-	text-align: center;
-}
-
-#blog nav:hover li{
-	display: block;
-}
-#blog nav:hover p{
-	display: block;
-}
 
 article{
 	display: block-inline;
@@ -172,7 +164,7 @@ article img{
 }
 
 
-h1{
+/*h1{
 	font-size: 3.33em;
 	text-align: center;
 	line-height: 3.33em;
@@ -201,7 +193,7 @@ p{
 	line-height: 1.33em;
 	margin-top: 5px;
 	padding-top: 15px;
-}
+}*/
 
 @media (min-device-width : 320px) and (max-device-width : 480px){
 	#blog{
@@ -265,7 +257,7 @@ p{
 		left:0px;
 		top: 0px;
 		
-		background-color: #C1C6D2;/*#109d61;*/
+		background-color: #C1C6D2;
 		z-index: 99;
 	}
 
