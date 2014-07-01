@@ -36,63 +36,64 @@
 					<li><a href="https://stephanie-chou.github.io/unit1_projects/week8_technical.html">Week Eight: Conflict</a></li>
 			</ul>
 		</nav>
+    <div class="wrapper">
+    	<div class="margin">
 
-	<div class="margin">
+    		<article id="positions" class=" text">
+    			<div class="margin">
+    				<p class="date">June 30, 2014</p>
+    				<h2> Big O Notation</h2>
+    				<h4> What is Big O?</h4>
+    				<p> Big O notation describes the runtime of an algorithm. Big O notation is usually used to refer to the runtimes of common data structure algorithms. These algorithms include searches, traversals, insertions, deletions and indexing.</p>
 
-		<article id="positions" class=" text">
-			<div class="margin">
-				<p class="date">June 30, 2014</p>
-				<h2> Big O Notation</h2>
-				<h4> What is Big O?</h4>
-				<p> Big O notation describes the runtime of an algorithm. Big O notation is usually used to refer to the runtimes of common data structure algorithms. These algorithms include searches, traversals, insertions, deletions and indexing.</p>
+    				<p>There are 4 major Big O runtimes</p>
+    				<li>O(1): This is the runtime of programs that run exactly the same regardless of the input. For example, finding the first element of an array.</li>
+    				<li>O(N): The runtime is proportional to the length of the input data.</li>
+    				<li>O(N<sup>2</sup>): The runtime is proportional to the square of the length of the input data. For example, nested loops often require O(N<sup>2</sup>) runtimes. For example, say you have two arrays of unique numbers of length N. You want to find out if they both contain the number 100. In the worst case, you would have to loop through the array N times. You should note that O(N)=2*O(N)=O(2N).</li>
+    				<li>O(log N): As the data set gets larger, the runtimes get logarithmically larger. This occurs in binary searches. A binary search is a search that begins by splitting the data set in two at the median. You then continue to split those two halves of the data set into halves and so on and so forth. </li>
 
-				<p>There are 4 major Big O runtimes</p>
-				<li>O(1): This is the runtime of programs that run exactly the same regardless of the input. For example, finding the first element of an array.</li>
-				<li>O(N): The runtime is proportional to the length of the input data.</li>
-				<li>O(N<sup>2</sup>): The runtime is proportional to the square of the length of the input data. For example, nested loops often require O(N<sup>2</sup>) runtimes. For example, say you have two arrays of unique numbers of length N. You want to find out if they both contain the number 100. In the worst case, you would have to loop through the array N times. You should note that O(N)=2*O(N)=O(2N).</li>
-				<li>O(log N): As the data set gets larger, the runtimes get logarithmically larger. This occurs in binary searches. A binary search is a search that begins by splitting the data set in two at the median. You then continue to split those two halves of the data set into halves and so on and so forth. </li>
-
-				<p> The order of efficiency of runtimes in ascending order is as follows: O(1), O(log N), O(N), ON<sup>2</sup>)</p>
-
-
-
-				<table style="width:300px">
-					<tr>
-						<th>Data Structure</th>
-						<th> Index</th> 
-						<th> Search</th>
-						<th> Insert</th>
-						<th> Delete</th>
-					</tr>
-					<tr>
-        				<td>Array</td>
-        				<td>O(1)</td>		
-        				<td>O(n)</td>
-        				<td>--</td>
-                        <td></td>
-					</tr>
-					<tr>
-    					<td>Hash</td>		
-    					<td>--</td>
-    					<td>O(n)</td> 
-    					<td>O(n)</td> 
-                        <td>O(n)</td>
-					</tr>
-				</table>
-
-				<h4> Why is Big O important?</h4>
-				<p> Runtimes are how long a program or algorithm takes to run. They are important because they describe the efficiency of a program. In programming and in a company, time is money. If one program can run twice as fast as another- the company would rather use the faster code. The runtime of an algorithm always refers to the worst case scenario. Let's take a look at a search algorithm on an array of unique numbers. Assume you want to find one particular number. In the worst case scenario, you would have to go through the entire length of the array to find that number. Your runtime would be O(n).</p>
-
-				<h4> Job Hunting: The Big O Questions</h4>
-				<p> Recruiters often want to know if you know Big O notation and will ask you to give them the runtime of code you write. Or they will ask you how you could make the code run faster. So it is a good idea to commit the concept of Big O and the more common Big O notations to memory</p>
+    				<p> The order of efficiency of runtimes in ascending order is as follows: O(1), O(log N), O(N), ON<sup>2</sup>)</p>
 
 
-				<p> References</p>
-				<a href="http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/">Beginner's Guide to Big O</a> 
-				<a href="http://bigocheatsheet.com/">Big O Cheat Sheet</a> 
-			</div>
-	</div>
 
+    				<table style="width:300px">
+    					<tr>
+    						<th>Data Structure</th>
+    						<th> Index</th> 
+    						<th> Search</th>
+    						<th> Insert</th>
+    						<th> Delete</th>
+    					</tr>
+    					<tr>
+            				<td>Array</td>
+            				<td>O(1)</td>		
+            				<td>O(n)</td>
+            				<td>--</td>
+                            <td></td>
+    					</tr>
+    					<tr>
+        					<td>Hash</td>		
+        					<td>--</td>
+        					<td>O(n)</td> 
+        					<td>O(n)</td> 
+                            <td>O(n)</td>
+    					</tr>
+    				</table>
+
+    				<h4> Why is Big O important?</h4>
+    				<p> Runtimes are how long a program or algorithm takes to run. They are important because they describe the efficiency of a program. In programming and in a company, time is money. If one program can run twice as fast as another- the company would rather use the faster code. The runtime of an algorithm always refers to the worst case scenario. Let's take a look at a search algorithm on an array of unique numbers. Assume you want to find one particular number. In the worst case scenario, you would have to go through the entire length of the array to find that number. Your runtime would be O(n).</p>
+
+    				<h4> Job Hunting: The Big O Questions</h4>
+    				<p> Recruiters often want to know if you know Big O notation and will ask you to give them the runtime of code you write. Or they will ask you how you could make the code run faster. So it is a good idea to commit the concept of Big O and the more common Big O notations to memory</p>
+
+
+    				<p> References</p>
+    				<a href="http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/">Beginner's Guide to Big O</a> 
+    				<a href="http://bigocheatsheet.com/">Big O Cheat Sheet</a> 
+    			</div>
+            </article>
+    	</div>
+    </div>
+    <footer> <p>Created by Stephanie Chou</p></footer>
 </body>
-<footer> <p>Created by Stephanie Chou</p></footer>
 </html>

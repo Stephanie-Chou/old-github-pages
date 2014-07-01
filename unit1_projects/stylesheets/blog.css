@@ -1,5 +1,6 @@
 body{
 	color: #303134;
+	min-height: 100%;
 	font-family: 'Voltaire', sans-serif;
 	background: url("../images/baybridge.png") center right fixed;
 	/*background-image: url("../images/graynoise.png");
@@ -17,6 +18,18 @@ header{
 	left: 0px
 	top: 0px;
 
+}
+
+.wrapper{
+	min-height: 100%;
+    height: auto;
+    margin-bottom:-100px;
+}
+
+.wrapper:after{
+	content: "";
+	display: block;
+	height: 100px;
 }
 
 footer{
