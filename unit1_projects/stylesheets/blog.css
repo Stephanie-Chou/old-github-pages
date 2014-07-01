@@ -20,14 +20,20 @@ header{
 }
 
 footer{
+	height: 100px;
 	width: 100%;
 	background-color: #109d61;
-	height: 100px;
+	margin-top: 20px;
+	padding: 10px;
+	overflow: hidden;
+	float: left;
+	left: 0px;
 	bottom: 0px;
 }
 
 footer p{
 	text-align: center;
+	color: white;
 }
 
 nav{
@@ -58,10 +64,26 @@ nav h4{
 	text-align: center;
 }
 
+nav img{
+	display: inline-block;
+	float: center;
+	width: 90%;
+	height: width;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 100%;
+}
+
 nav:hover li{
 	display: block;
 }
 nav:hover p{
+	display: block;
+}
+
+nav:hover img{
 	display: block;
 }
 /*.margin{
@@ -92,6 +114,18 @@ article{
 
 	li{
 		font-size: 1em;
+	}
+	nav img{
+		display: none;
+		float: center;
+		width: 30%;
+		height: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 100%;
+	}
+	nav:hover img{
+		display: block;
 	}
 
 }
@@ -153,6 +187,19 @@ article{
 
 	nav a:hover{
 		color: #fff;
+	}
+
+	nav img{
+		display: none;
+		float: center;
+		width: 30%;
+		height: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 100%;
+	}
+	nav:hover img{
+		display: block;
 	}
 	
 }

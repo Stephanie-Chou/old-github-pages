@@ -62,6 +62,8 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
+  /*CHANGE color*/
+  color: #109d61;
 }
 mark {
   color: #000;
@@ -900,7 +902,7 @@ body {
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: #303134;/*#333;*/
   background-color: #fff;
 }
 input,
@@ -989,20 +991,34 @@ hr {
 h1,
 h2,
 h3,
+.h1,
+.h2,
+.h3
+{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1; 
+  /*CHANGE*/
+  color: #109d61;
+  /*color: inherit;*/
+}
 h4,
 h5,
 h6,
-.h1,
-.h2,
-.h3,
 .h4,
 .h5,
-.h6 {
+.h6 
+{
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.1; 
   color: inherit;
 }
+
+h1, .h1 {
+  text-align: center;
+}
+
 h1 small,
 h2 small,
 h3 small,
