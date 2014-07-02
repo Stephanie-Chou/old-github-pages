@@ -264,7 +264,7 @@ p{
 		background-color: #C1C6D2;
 	}
 	nav li{
-		display: block;
+		display: inline-block;
 	}
 	nav p{
 		display: block;
