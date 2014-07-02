@@ -277,7 +277,7 @@ p{
 
 	nav img{
 		float: center;
-		display: block;
+		display: none;
 		width: 10%;
 		height: width;
 		margin-left: auto;
