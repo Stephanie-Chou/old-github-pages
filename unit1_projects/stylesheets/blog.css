@@ -252,14 +252,14 @@ p{
 		
 		background-color: #C1C6D2;
 	}
-	nav:active, nav.hover_effect {
+	nav:active{
 		height: auto;
 	}
-	nav:active, nav.hover_effect li{
+	nav:active li{
 		display: inline;
 
 	}
-	nav:active, nav.hover_effect p{
+	nav:active p{
 		display: inline-block;
 	}
 	nav li{
@@ -273,7 +273,7 @@ p{
 		text-align: center;
 	}
 
-	nav a.hover_effect{
+	nav a:active{
 		color: #fff;
 	}
 
