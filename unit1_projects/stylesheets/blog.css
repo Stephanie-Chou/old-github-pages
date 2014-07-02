@@ -2,10 +2,10 @@ body{
 	color: #fff;/*#303134;*/
 	height: 100%;
 	font-family: 'Voltaire', sans-serif;
-	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top right;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: black;
 
@@ -61,22 +61,60 @@ header{
 footer{
 	height: 100px;
 	width: 100%;
-	background-color: #C1C6D2;
+	background-color:#000;/* #C1C6D2;*/
 	margin-top: 20px;
-	padding: 10px;
-	overflow: hidden;
 	float: left;
 	left: 0px;
 	bottom: 0px;
+	padding: 20px;
+	overflow: hidden;
+	opacity: .9;
+
 }
 
 footer p{
 	text-align: center;
-	color: #109d61;
+	color: #fff;
 }
 /*.dropdown{
 	display: none;
 }*/
+
+
+.navSec{
+	display: inline;
+	float: left;
+	position:relative;
+	width: 25%;
+	background-color: #000;/*#C1C6D2;*/
+	opacity: .7;
+}
+
+.mainSec{
+	display: inline;
+	float: right;
+	position: relative;
+	width: 75%;
+	min-height: 100%;
+}
+
+.navSec img{
+	display: inline-block;
+	float: center;
+	width: 90%;
+	height: width;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius:100%;
+}
+
+
+.navSec h4{
+	text-align: center;
+}
+
 nav{
 	width: 100%;
 	height: 100%;
@@ -87,7 +125,6 @@ nav{
 	margin-right: 100px;
 	background-color: #000;/*#C1C6D2;*/
 	z-index: 99;
-
 }
 
 nav li{
@@ -96,7 +133,7 @@ nav li{
 }
 nav p{
 	text-transform: uppercase;
-	color: #109d61;
+	color: #805415; /*#109d61;*/
 	text-align: center;
 	/*display: none;*/
 }
@@ -115,42 +152,6 @@ nav img{
 	margin-right: auto;
 	padding: 20px;
 	border-radius: 100%;
-}
-
-
-
-.navSec{
-	display: inline;
-	float: left;
-	position:relative;
-	width: 25%;
-	background-color: #000;/*#C1C6D2;*/
-}
-
-.mainSec{
-	display: inline;
-	float: right;
-	position: relative;
-	width: 75%;
-	min-height: 100%;
-}
-
-
-.navSec img{
-	display: inline-block;
-	float: center;
-	width: 90%;
-	height: width;
-	margin-top: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	border-radius:100%;
-}
-
-
-.navSec h4{
-	text-align: center;
 }
 
 article{
@@ -181,8 +182,16 @@ article img{
 }
 
 
-a{
+nav a{
 	color: #fff;
+}
+
+nav a:hover{
+	color: #805415;
+}
+
+a{
+	color:#805415;
 }
 a:visited {
 	color: #C1C6D2;
@@ -203,7 +212,8 @@ h1{
 h2{
 	font-size: 2.33em;
 	line-height: 1.33em;
-	color: #109d61;
+	/*color: #109d61;*/
+	color:#805415;
 }
 
 h3{
@@ -220,8 +230,8 @@ p{
 
 .date{
 	text-transform: uppercase;
-	color: #109d61;
-
+	/*color: #109d61;*/
+	color: #805415;
 }
 
 
