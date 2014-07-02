@@ -180,8 +180,7 @@ article{
 article img{
 	display: inline;
 	padding: 10px;
-	height: 150px;
-	
+	height: 150px;	
 }
 
 .circle{
@@ -235,9 +234,7 @@ p{
 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-	/* use this for hover on touch devices
-	http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers*/
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 	body{
 		background-size: contain;
 	}
@@ -270,17 +267,15 @@ p{
 		background-color: #C1C6D2;
 	}
 
-/*	nav img{
+	nav img{
 		float: center;
-		width: 30%;
+		width: 10%;
 		height: inherit;
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 100%;
-	}*/
-
-
-}
+	}
+}*/
 
 /*@media (min-device-width : 320px) and (max-device-width : 480px){
 */
