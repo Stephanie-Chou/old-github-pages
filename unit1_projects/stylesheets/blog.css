@@ -72,9 +72,9 @@ footer p{
 	text-align: center;
 	color: #109d61;
 }
-.dropdown{
+/*.dropdown{
 	display: none;
-}
+}*/
 nav{
 	width: auto;
 	height: 100%;
@@ -258,7 +258,7 @@ p{
 		font-size: 1em;
 	}
 	nav{
-		display:block ;
+		display:block;
 		height: 50px;
 		margin-top: 0px;
 		position: fixed;
@@ -267,8 +267,6 @@ p{
 		top: 0px;
 		background-color: #C1C6D2;
 	}
-
-
 	nav li{
 		display: block;
 	}
