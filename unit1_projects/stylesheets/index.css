@@ -128,7 +128,7 @@ li a:hover{
 
 
 #blog{
-	background: url("../images/baybridge.png") fixed;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") fixed;
 	background-size: cover;
 	background-position: top right;
 	background-repeat: no-repeat;
@@ -140,8 +140,8 @@ li a:hover{
 article{
 	display: block-inline;
 	width: 70%;
-	background-color: #fff ;
-		opacity: .8;
+	background-color: #000 ;
+	opacity: .95;
 
 	/*box-shadow: 5px 5px 5px #042f4f;*/
 	min-height: 300px;
@@ -151,6 +151,8 @@ article{
 	z-index: -1;
 	
 }
+
+
 
 article img{
 	display: inline;
