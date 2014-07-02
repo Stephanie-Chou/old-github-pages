@@ -8,6 +8,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: black;
+	margin: 0px;
 
 	/*"../images/baybridge.png"
 https://stephanie-chou.github.io/unit1_projects/images/baybridge.png"
@@ -66,9 +67,7 @@ footer{
 	float: left;
 	left: 0px;
 	bottom: 0px;
-	padding: 20px;
-	overflow: hidden;
-	opacity: .9;
+	opacity: .95;
 
 }
 
@@ -87,7 +86,7 @@ footer p{
 	position:relative;
 	width: 25%;
 	background-color: #000;/*#C1C6D2;*/
-	opacity: .7;
+	opacity: .95;
 }
 
 .mainSec{
@@ -165,7 +164,7 @@ article{
 	border-radius: 20px;
 	padding: 15px;
 	z-index: -1;
-	opacity: .8;
+	opacity: .95;
 }
 
 article img{
