@@ -220,7 +220,7 @@ p{
 	/* use this for hover on touch devices
 	http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers*/
 	body{
-		background-size: cover;
+		background:auto, 100%;
 	}
 	.navSec{
 		display: block;

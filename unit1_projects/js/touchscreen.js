@@ -3,4 +3,7 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).toggleClass('hover_effect');
     });
+
+    
+
 });
