@@ -258,6 +258,7 @@ p{
 		font-size: 1em;
 	}
 	nav{
+		display:block ;
 		height: 50px;
 		margin-top: 0px;
 		position: fixed;
@@ -274,8 +275,10 @@ p{
 	nav p{
 		display: block;
 	}
-
 	nav img{
+		display: none;
+	}
+/*	nav img{
 		float: center;
 		display: none;
 		width: 10%;
@@ -283,7 +286,7 @@ p{
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 100%;
-	}
+	}*/
 }
 
 /*@media (min-device-width : 320px) and (max-device-width : 480px){
