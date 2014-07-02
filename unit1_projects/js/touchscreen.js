@@ -9,7 +9,7 @@ $(document).ready(function() {
    		$(this).slideDown();
    	});
 
-   	$( "#box" ).on( "click", function() {
-  		$( this ).css( "width", "+=200" );
+   	$( "#box").click(function(){
+  		$("#box").css( "background-color", "#fff" );
 	});
 });
