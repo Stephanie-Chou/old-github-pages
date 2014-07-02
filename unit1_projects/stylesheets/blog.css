@@ -217,8 +217,10 @@ p{
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	/* use this for hover on touch devices
+	http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers*/
 	body{
-		background-size: 100%;
+		background-size: cover;
 	}
 	.navSec{
 		display: block;
@@ -250,14 +252,14 @@ p{
 		
 		background-color: #C1C6D2;
 	}
-	nav:focus{
+	nav:focus, nav.hover_effect {
 		height: auto;
 	}
-	nav:focus li{
+	nav:focus, nav.hover_effect li{
 		display: inline;
 
 	}
-	nav:focus p{
+	nav:focus, nav.hover_effect p{
 		display: inline-block;
 	}
 	nav li{
@@ -271,7 +273,7 @@ p{
 		text-align: center;
 	}
 
-	nav a:focus{
+	nav a.hover_effect{
 		color: #fff;
 	}
 
@@ -284,7 +286,7 @@ p{
 		margin-right: auto;
 		border-radius: 100%;
 	}
-	nav:focus img{
+	nav.hover_effect img{
 		display: block;
 	}
 
