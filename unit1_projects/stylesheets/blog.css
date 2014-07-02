@@ -2,7 +2,9 @@ body{
 	color: #303134;
 	height: 100%;
 	font-family: 'Voltaire', sans-serif;
-	background: url("https://stephanie-chou.github.io/unit1_projects/images/baybridge.png") center right fixed;
+	background: url("https://stephanie-chou.github.io/unit1_projects/images/baybridge.png");
+	position: fixed;
+	background-attachment: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: black;
