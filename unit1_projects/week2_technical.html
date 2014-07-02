@@ -7,56 +7,66 @@
 	<link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <div id="wrapper">
+        <div class="navSec">
+    		<nav>
+    			<a href="https://stephanie-chou.github.io/index.html"><img src="../unit1_projects/images/pygmalion.png"></a>
+    			<h4>Archive</h4>
 
-		
-		<nav>
-			<h4>Archive</h4>
+    			<ul>
+    				<p> Technical </p>
+    				
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">Week One:Websites</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">Week Two: Positioning</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_technical.html">Week Three: Why JavaScript</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_technical.html">Week Four: Arrays vs Hashes</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_technical.html">Week Five: Instance Everything</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_technical.html">Week Six:OOP</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week7_technical.html">Week Seven: SQL Injection</a></li>
+    					<li><a href="https://stephanie-chou.github.io/unit1_projects/week8_technical.html">Week Eight: Big O Notation</a></li>
 
-			<ul>
-				<p> Technical </p>
+    				
+    				<p> Cultural </p>
+    				
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_cultural.html">Week One: DBC</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_cultural.html">Week Three: Learning Style</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_cultural.html">Week Four: Tech Needs Women</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_cultural.html">Week Five: Peer Pairing</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_cultural.html">Week Six: Dangerous Stereotypes</a></li>
+    					<li> <a href="https://stephanie-chou.github.io/unit1_projects/week7_cultural.html">Week Seven: Integrity</a></li>
+    					<li><a href="https://stephanie-chou.github.io/unit1_projects/week8_technical.html">Week Eight: Conflict</a></li>
+    			</ul>
+    		</nav>
+        </div>
+        <div class="mainSec">
 
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">Week One:Websites</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">Week Two:</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_technical.html">Week Three:</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_technical.html">Week Four:</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_technical.html">Week Five:</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_technical.html">Week Six:</a></li>
-				<p> Cultural </p>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week1_cultural.html">Week One</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week3_cultural.html">Week Three</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week4_cultural.html">Week Four</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week5_cultural.html">Week Five</a></li>
-				<li> <a href="https://stephanie-chou.github.io/unit1_projects/week6_cultural.html">Week Six:</a></li>
-			</ul>
-		</nav>
-
-	<div class="margin">
-
-		<article>
-			<div class="margin">
-				<p class="date">June 2, 2014</p>
-				<h2>What are the differences between relative, absolute, and fixed positioning</h2>
-				<h3>Relative</h3>
-				<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them. The below rectangle and circle are relative</p>
-				<div class="relative white rectangle">
-					<div class="relative blue rectangle"><p><font color="#000">relative!</font></p></div>
-					<div class="relative circle"></div>
+			<article>
+				<div class="margin">
+					<p class="date">June 2, 2014</p>
+					<h2>What are the differences between relative, absolute, and fixed positioning</h2>
+					<h3>Relative</h3>
+					<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them. The below rectangle and circle are relative</p>
+					<div class="relative white rectangle">
+						<div class="relative blue rectangle"><p><font color="#000">relative!</font></p></div>
+						<div class="relative circle"></div>
+						
+					</div>
+					<h3>Absolute</h3>
+					<p> Absolute objects are positioned relative to the parent container. Absolute positioned objects are often used within a relatively positioned object. An absolute object is out of the 'normal' flow of the page. Objects positioned within the normal flow of the page after an absolute object will overlap the absolute object. The below blue rectangle is absolute while the black circle is relative.</p>
 					
+					<div class="relative white rectangle"><div class="absolute blue rectangle"><p><font color="#000">absolute!</font></p></div>
+						<div class="relative circle"></div></div>
+					
+
+					<h3>Fixed</h3>
+					<p>A fixed position object will not move even if the page is scrolled. This is because the object is fixed relative to the browser window. The below rectangle is fixed
+					<div class="fixed blue rectangle"><p><font color="#000">fixed!</font></p></div>
+					</p>
 				</div>
-				<h3>Absolute</h3>
-				<p> Absolute objects are positioned relative to the parent container. Absolute positioned objects are often used within a relatively positioned object. An absolute object is out of the 'normal' flow of the page. Objects positioned within the normal flow of the page after an absolute object will overlap the absolute object. The below blue rectangle is absolute while the black circle is relative.</p>
-				
-				<div class="relative white rectangle"><div class="absolute blue rectangle"><p><font color="#000">absolute!</font></p></div>
-					<div class="relative circle"></div></div>
-				
-
-				<h3>Fixed</h3>
-				<p>A fixed position object will not move even if the page is scrolled. This is because the object is fixed relative to the browser window. The below rectangle is fixed
-				<div class="fixed blue rectangle"><p><font color="#000">fixed!</font></p></div>
-				</p>
-			</div>
-		</article>
-
-	</div>
+			</article>
+		</div>
+        <div id="push"></div>
+    </div>
+    <footer> <p>Created by Stephanie Chou</p></footer>
 </body>
 </html>
