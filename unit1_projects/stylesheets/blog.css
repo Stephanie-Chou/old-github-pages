@@ -72,9 +72,9 @@ footer p{
 	text-align: center;
 	color: #109d61;
 }
-/*.dropdown{
+.dropdown{
 	display: none;
-}*/
+}
 nav{
 	width: auto;
 	height: 100%;
@@ -116,16 +116,6 @@ nav img{
 	border-radius: 100%;
 }
 
-/*nav:hover li{
-	display: block;
-}
-nav:hover p{
-	display: block;
-}
-
-nav:hover img{
-	display: block;
-}*/
 
 
 .navSec{
@@ -234,43 +224,5 @@ p{
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-	body{
-		background-size: contain;
-	}
-	.navSec{
-		display: block;
-		float: left;
-		position:relative;
-		width: 100%;
-		height: auto;
-	}
 
-	.mainSec{
-		display: block;
-		float: left;
-		position: relative;
-		width: 100%;
-		min-height: 100%;
-	}
-
-	nav{
-		display:block;
-		height: auto;
-		margin-top: 0px;
-		position: fixed;
-		float: left;
-		left:0px;
-		top: 0px;
-		background-color: #C1C6D2;
-	}
-	nav li{
-		display: inline-block;
-	}
-	nav p{
-		display: block;
-	}
-	nav img{
-		display: none;
-		visibility: hidden;
-	}
 }
