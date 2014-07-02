@@ -137,10 +137,13 @@ nav li{
 	/*display: none;*/
 }
 nav p{
+
+	/*display: none;*/
+}
+nav h4{
 	text-transform: uppercase;
 	color: #805415; /*#109d61;*/
 	text-align: center;
-	/*display: none;*/
 }
 
 nav h4{
