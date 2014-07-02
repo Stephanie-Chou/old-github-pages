@@ -2,14 +2,16 @@ body{
 	color: #303134;
 	height: 100%;
 	font-family: 'Voltaire', sans-serif;
-	background: url("https://stephanie-chou.github.io/unit1_projects/images/baybridge.png") top right;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top right;
 	background-position: fixed;
 	background-attachment: fixed;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: black;
 
-	/*"../images/baybridge.png"*/
+	/*"../images/baybridge.png"
+https://stephanie-chou.github.io/unit1_projects/images/baybridge.png"
+	*/
 }
 
 
