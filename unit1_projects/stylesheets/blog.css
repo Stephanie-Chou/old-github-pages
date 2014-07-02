@@ -220,7 +220,7 @@ p{
 	/* use this for hover on touch devices
 	http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers*/
 	body{
-		background-size: auto, 100%;
+		background-size: contain;
 	}
 	.navSec{
 		display: block;
@@ -228,6 +228,7 @@ p{
 		position:relative;
 		width: 100%;
 		height: auto;
+		border: solid 2px #000;
 	}
 
 	.mainSec{
@@ -252,16 +253,7 @@ p{
 		
 		background-color: #C1C6D2;
 	}
-	nav:active, nav.hover_effect {
-		height: auto;
-	}
-	nav:focus, nav.hover_effect li{
-		display: inline;
 
-	}
-	nav:focus, nav.hover_effect p{
-		display: inline-block;
-	}
 	nav li{
 		padding: 10px;
 		display: none;
@@ -272,6 +264,17 @@ p{
 		color: #109d61;
 		text-align: center;
 	}
+	nav:active{
+		height: auto;
+	}
+	nav:active li{
+		display: inline;
+
+	}
+	nav:active p{
+		display: inline-block;
+	}
+	
 
 	nav a.hover_effect{
 		color: #fff;
