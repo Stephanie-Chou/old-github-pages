@@ -250,14 +250,14 @@ p{
 		
 		background-color: #C1C6D2;
 	}
-	nav:hover{
+	nav:focus{
 		height: auto;
 	}
-	nav:hover li{
+	nav:focus li{
 		display: inline;
 
 	}
-	nav:hover p{
+	nav:focus p{
 		display: inline-block;
 	}
 	nav li{
@@ -271,7 +271,7 @@ p{
 		text-align: center;
 	}
 
-	nav a:hover{
+	nav a:focus{
 		color: #fff;
 	}
 
@@ -284,7 +284,7 @@ p{
 		margin-right: auto;
 		border-radius: 100%;
 	}
-	nav:hover img{
+	nav:focus img{
 		display: block;
 	}
 
