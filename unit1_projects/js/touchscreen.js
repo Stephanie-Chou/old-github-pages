@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(this).toggleClass('hover_effect');
     });
 
-    $('nav').css('background-color' : 'purple')
+    $('nav').css({'background-color' : '#000'});
 
 
 });

@@ -83,8 +83,8 @@ nav{
 	top: 0px;
 	margin-right: 100px;
 	padding-right: 20px;
-	background-color: #C1C6D2;/*#109d61;*/
-	z-index: 99;
+/*	background-color: #C1C6D2;
+*/	z-index: 99;
 
 }
 
@@ -227,7 +227,7 @@ p{
 		float: left;
 		position:relative;
 		width: 100%;
-		height: auto;
+		height: 50px;
 		border: solid 2px #000;
 	}
 
