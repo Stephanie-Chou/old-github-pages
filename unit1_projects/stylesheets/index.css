@@ -10,7 +10,7 @@ body{
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
 	margin: 0px;
