@@ -18,13 +18,26 @@ body{
 	margin: 0px;
 }
 
+#body_bg{
+	color: #fff;/*#303134;*/
+	height: 100%;
+	font-family: 'Voltaire', sans-serif;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	margin: 0px;
+}
+
+
 section{
 	width:100%;
 	float: left;
 	right: 0px;
 	margin: 0px;
 	padding: 0px;
-	opacity: .3;
 }
 .wrapper{
 	width:70%;
