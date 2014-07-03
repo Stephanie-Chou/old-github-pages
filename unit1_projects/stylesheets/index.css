@@ -6,13 +6,15 @@ body{
 	padding: 0px;
 	margin:0px;*/
 
+	color: #fff;/*#303134;*/
 	height: 100%;
+	font-family: 'Voltaire', sans-serif;
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #000;
+	background-color: black;
 	margin: 0px;
 }
 
@@ -229,13 +231,6 @@ p{
 }*/
 
 @media (min-device-width : 320px) and (max-device-width : 480px){
-/*	#blog{
-	background: url("../images/baybridge.png") top right fixed;
-	background-size: contain;
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	background-color: #000;
-	}*/
 
 	li{
 		font-size: 1.33em;
@@ -250,78 +245,7 @@ p{
 		width: 45%;
 	}
 	.content{
-	float: left;
-	width: 45%;
-}
-
-}
-
-
-@media (max-width: 940px){
-	section{
-		width:100%;
-		height: auto;
 		float: left;
-		right: 0px;
-		margin: 0px;
-		padding: 0px;
+		width: 45%;
 	}
-	#places img{
-		width: 80%;
-		margin:1%;
-		height: auto;
-		display: block;
-	}
-
-	.content{
-		width:70%;
-		margin: 20px, auto;
-	}
-	h1{
-		font-size: 2.33em;
-		line-height: .33em;	
-	}
-	article{
-		margin: 90px auto;
-		width: 80%;
-		z-index: -1;
-	}
-
-	#blog nav{
-		width: 100%;
-		height: 50px;
-		margin-top: 0px;
-		float: left;
-		left:0px;
-		top: 0px;
-		
-		background-color: #C1C6D2;
-		z-index: 99;
-	}
-
-	#blog nav:hover{
-		height: auto;
-	}
-	#blog nav:hover li{
-		display: inline;
-
-	}
-	#blog nav:hover p{
-		display: inline-block;
-	}
-	#blog nav li{
-		padding: 10px;
-		display: none;
-	}
-	#blog nav p{
-		display: none;
-		text-transform: uppercase;
-		color: #109d61;
-		text-align: center;
-	}
-
-	#blog nav a:hover{
-		color: #fff;
-	}
-
 }
