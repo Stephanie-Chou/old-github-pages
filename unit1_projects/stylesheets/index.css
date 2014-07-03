@@ -128,10 +128,12 @@ li a:hover{
 
 
 #blog{
-	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") fixed;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
 	background-size: cover;
-	background-position: top right;
 	background-repeat: no-repeat;
+	height: 100%;
 	background-color: #000;
 }
 
