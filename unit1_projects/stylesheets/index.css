@@ -1,15 +1,23 @@
 
 body{
-
+/*
 	background color:#000;
 	color: #303134;
 	padding: 0px;
-	margin:0px;
+	margin:0px;*/
+
+	height: 100%;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #000;
+	margin: 0px;
 }
 
 section{
 	width:100%;
-	min-height: 600px;
 	float: left;
 	right: 0px;
 	margin: 0px;
@@ -87,6 +95,7 @@ li a:hover{
 #about{
 /*	background-image: url("../images/stephanie2_med.png");*/	
 	background-image: url("../images/beach.png");
+	min-height: 600px;
 	background-color: #000;/* #175e94 ;*/
 	background-size: cover;
 	background-position: top right;
@@ -128,13 +137,13 @@ li a:hover{
 
 
 #blog{
+/*	height: 100%;
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
-	height: 100%;
-	background-color: #000;
+	background-color: #000;*/
 }
 
 
