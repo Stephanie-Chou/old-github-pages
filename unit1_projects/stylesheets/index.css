@@ -220,13 +220,13 @@ p{
 }*/
 
 @media (min-device-width : 320px) and (max-device-width : 480px){
-	#blog{
+/*	#blog{
 	background: url("../images/baybridge.png") top right fixed;
 	background-size: contain;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-color: #000;
-	}
+	}*/
 
 	li{
 		font-size: 1.33em;
@@ -234,6 +234,11 @@ p{
 	p{
 		font-size: 1.66em;
 		line-height: 1.66em;
+	}
+
+	article{
+		float: center;
+		width: 45%;
 	}
 	.content{
 	float: left;
