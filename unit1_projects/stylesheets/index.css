@@ -159,7 +159,7 @@ li a:hover{
 	margin:40px;
 }
 
-.social img:hover{
+img:hover{
 	-webkit-filter: sepia(100%);
 }
 
