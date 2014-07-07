@@ -155,12 +155,17 @@ li a:hover{
 }
 
 .social{
-	float: left;
-	margin:40px;
+	float: right;
+	margin-bottom: 20px;
+	opacity: .95;
 }
 
-img:hover{
+.social:hover{
+	background-color: white;
+}
+.social img:hover{
 	-webkit-filter: sepia(100%);
+
 }
 
 #blog{
