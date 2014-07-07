@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<style>
+	body{
+		font-family: sans-serif;
+	}
+	input{
+		padding:5px;
+		border:1px solid #999; 
+		border-radius:4px; 
+		-moz-border-radius:4px; 
+		-web-kit-border-radius:4px; 
+		-khtml-border-radius:4px;
+	}
+	h2{
+		display: inline-block;
+	}
+	#listDiv{
+		padding: 5px;
+		border: 1px solid #999;
+		border-radius: 4px;
+		background-color: gray;
+		width: 50%;
+	}
+	#itemsDiv{
+
+	}
+
+	.item{
+		display: inline-block;	
+		background-color: orange;	
+	}
+
+	.item p:hover{
+		color: white;
+	}
+	.options{
+		display: inline-block;
+	}
+	.options p{
+		display: none;
+	}
+	.options p:hover{
+		color: red;
+	}
+
+	button{
+		padding:5px;
+		border:1px solid #999; 
+		border-radius:4px; 
+		-moz-border-radius:4px; 
+		-web-kit-border-radius:4px; 
+		-khtml-border-radius:4px;
+	}
+	button:hover{
+		background-color: gray;
+	}
+
+	.glyphicon {
+	  position: relative;
+	  top: 1px;
+	  display: inline-block;
+	  font-family: 'Glyphicons Halflings';
+	  font-style: normal;
+	  font-weight: normal;
+	  line-height: 1;
+
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	}
+</style>
+
+	<body>
+		<h1> Grocery List</h1>  			
+  			<div id="listDiv">
+	  			<h3> Shopping List</h3>
+	  			<div id="itemsDiv">
+
+  				</div>
+  				<input type="text" name="quantity" id="quantity" placeholder="quantity">
+  				<input type="text" name="item" id="item" placeholder="item">
+	  			<button type="button" id="add">Add item</button>
+  			</div>
+
+<script>
+	// function GroceryList(list){
+	// 	// list is an object where the properties are the
+	// 	// list items and the values are the quantities
+	// 	this.list=list;
+	// 	this.add=function(item, quantity){
+	// 		this.list[item]=quantity;
+			
+	// 	}
+
+	// 	this.delete= function(item, quantity){
+	// 		if((this.list[item])-quantity<1){
+	// 			delete(this.list[item]);
+	// 		}
+	// 		else{
+				
+	// 			this.list[item]= (this.list[item])-quantity;
+	// 		}
+	// 	}
+	// 	this.display= function(){
+	// 		console.log(this.list);
+	// 	}
+	// }
+
+	// var inputDiv=$('.listDiv');
+	// var i=$('.listDiv').size() +1;
+
+	$("#add").click(function(){
+		if( $('#item').val() == ''){
+	        alert('Please enter Item'); 
+	    }
+	    else {
+	    	$('#itemsDiv').append('<div class="item">'+ document.getElementById("quantity").value+' '+document.getElementById("item").value +' '+'<div class="options"><span class="glyphicons"> <img src="glyphicons_030_pencil.png"></span><span class="glyphicons"> <img src="glyphicons_016_bin.png"></span></div></div><br>');
+	    }
+	    
+	});
+	// make on click work on an appended item:
+	$(document).on('click', '.item', function(){
+		$(this).css('background-color', "purple");
+		$(this).children('.options').css('background-color', 'blue');
+	});
+</script>
+	</body>
+</html>
