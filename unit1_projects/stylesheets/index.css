@@ -8,7 +8,7 @@ body{
 
 	color: #fff;/*#303134;*/
 	height: 100%;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
@@ -154,7 +154,14 @@ li a:hover{
 	border-radius: 100%;
 }
 
+.social{
+	float: left;
+	margin:40px;
+}
 
+.social img:hover{
+	-webkit-filter: sepia(100%);
+}
 
 #blog{
 /*	height: 100%;
