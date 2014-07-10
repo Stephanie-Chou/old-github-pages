@@ -1,69 +1,13 @@
 
 <!DOCTYPE html>
   <head>
-    
+    <link rel="stylesheet" href="cheatsheet.css" type="text/css" media="all">
   </head>
   
-<style>
-    body {
-  background-color: #2A0F88;
-  font-family: 'Helvtica', sans-serif;
-}
 
-div {
-  
-}
-
-article {
-  
-}
-
-h1 { 
-  color: #FFF6F6;
-  text-align: center;
-}
-
-h2 {
-  
-}
-
-p {
-  
-}
-
-/*http://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
-
-pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-#title {
-  
-}
-
-#main {
-  background-color: #FFF6F6;
-  float: left;
-  margin: auto;
-  width: 60%;
-  padding:15px;
-}
-
-#glossary {
-  background-color: #FFF6F6; 
-  float: right;
-  margin: auto;
-  width: 30%;
-  padding:15px;
-}
-</style>  
   <body>
     <div id="title">
-        <h1>title</h1>
+        <h1>Javascript Object Cheatsheet</h1>
     </div>
     <div id="main">
         <article>
@@ -84,7 +28,7 @@ pre {
             
             <p>A primitive data type can be copied, but the copy is not linked to the original. If you change the original, the copy will not change.</p>
 
-            <pre lang="javascript">// The primitive data type String is stored as a value
+            <pre lang="java">// The primitive data type String is stored as a value
 var person = "Kobe";  
 var anotherPerson = person; // anotherPerson = the value of person
 person = "Bryant"; // value of person changed
@@ -95,7 +39,7 @@ console.log(person); // Bryant</pre></p>
             <p>A reference data type can also be copied, but the copies are still linked; if you change 
             the original data, the copy will reflect that change.</p>
             
-            <p><pre lang="javascript">var person = {name: "Kobe"};
+            <p><pre lang="java">var person = {name: "Kobe"};
 var anotherPerson = person;
 person.name = "Bryant";
             
@@ -108,7 +52,6 @@ console.log(person.name); // Bryant</pre></p>
         <article>
             <h2> Object Property attributes</h2>
             <p>Object data properties have attributes (Configurable, Enumerable, and Writable). They are set true by default, but can be turned off. We believe this would be for security purposes, much like the public and private attributes in Ruby classes.</p>
-            <pre lang="javascript"></pre>
         </article>
         
         
@@ -116,7 +59,8 @@ console.log(person.name); // Bryant</pre></p>
             <h2>Ways to Create Objects</h2>
             <p>- Object Literal
 
-<p>// This is an empty object initialized using the object literal notation
+<pre lang="java">
+// This is an empty object initialized using the object literal notation
 var myBooks = {};
 
 // This is an object with 4 items, again using object literal
@@ -126,21 +70,21 @@ shape: "round",
 sweetness: 8,
 
 howSweetAmI: function () {
-console.log("Hmm Hmm Good");
+	console.log("Hmm Hmm Good");
+	}
 }
-}
-
-<p>- Object Constructor: you have to make sure to use the new keyword
-
-<p>var mango =  new Object ();
+</pre>
+<p>- Object Constructor: you have to make sure to use the new keyword</p>
+<pre lang="java">
+var mango =  new Object ();
 mango.color = "yellow";
 mango.shape= "round";
 mango.sweetness = 8;
 
 mango.howSweetAmI = function () {
-console.log("Hmm Hmm Good");
-}</p>
-            <pre lang="javascript"></pre>
+	console.log("Hmm Hmm Good");
+}
+</pre>
         </article>
         
         
@@ -217,20 +161,20 @@ console.log (book["bookMark" + 1]); // Page 20 
     <div id="glossary">
         <h2>Glossary of methods and operators</h2>
         
-        <li>hasOwnProperty: used to see if an object has a specific property as one of its own properties, specifically excluding inherited properties. </li>
-        <li>for (var in object): a basic loop structure in JavaScript. It can be used to access  all of the properties in a JavaScript Object. </li>
-        <pre lang="javascript">
+        <li><b><pre class="definition">hasOwnProperty:</pre></b> used to see if an object has a specific property as one of its own properties, specifically excluding inherited properties. </li>
+        <li><b><pre class="definition"> for (var variable in object):</pre></b> a basic loop structure in JavaScript. It can be used to access  all of the properties in a JavaScript Object. </li>
+        <pre lang="java">
  //Use of the for/in loop to access the properties in the school object
 for (var eachItem in object) {
   console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation
 }</pre>
-        <li>this: this is a keyword. this always refers the the owner of the function we are executing. In this example, 'this' refers to HigherLearning. 
-<pre lang="javascript">function HigherLearning () {
+        <li><b><pre class="definition">this:</b></pre> this is a keyword. this always refers the the owner of the function we are executing. In this example, 'this' refers to HigherLearning. 
+<pre lang="java">function HigherLearning () {
 this.educationLevel = "University";
 }</pre>
            reference- http://www.quirksmode.org/js/this.html</li>
            
-        <li>   delete: Used to delete a property from an object.
+        <li>  <b><pre class="definition"> delete:</b></pre> Used to delete a property from an object.
         <pre lang="javascript">
 var christmasList = {mike:"Book", jason:"sweater" }
 delete christmasList.mike; // deletes the mike property</pre>
