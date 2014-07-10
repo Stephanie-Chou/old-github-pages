@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+  <head>
+    
+  </head>
+  
+<style>
+    body {
+  background-color: #2A0F88;
+  font-family: 'Helvtica', sans-serif;
+}
+
+div {
+  
+}
+
+article {
+  
+}
+
+h1 { 
+  color: #FFF6F6;
+  text-align: center;
+}
+
+h2 {
+  
+}
+
+p {
+  
+}
+
+/*http://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#title {
+  
+}
+
+#main {
+  background-color: #FFF6F6;
+  float: left;
+  margin: auto;
+  width: 60%;
+  padding:15px;
+}
+
+#glossary {
+  background-color: #FFF6F6; 
+  float: right;
+  margin: auto;
+  width: 30%;
+  padding:15px;
+}
+</style>  
+  <body>
+    <div id="title">
+        <h1>title</h1>
+    </div>
+    <div id="main">
+        <article>
+            <h2>JavaScript Objects</h2>
+            
+            <p>There are two types of JavaScript objects: primitive and complex.</p>
+            
+            <p><ul>
+                <li>5 primitives: number, string, boolean, undefined, and null</li>
+                <li>1 complex: Object</li>
+            </ul></p>
+            
+            <p>An object is an unordered list of primitive data (and sometimes reference data types) types that are stored as name-            value pairs. Objects can contain any other data type, including numbers, arrays, and other objects.</p>
+
+            <p>Each item in an object is called a property, and functions within an object are called methods.</p>
+
+            <p>Property names have to be unique and can be a string or number.</p>
+            
+            <p>A primitive data type can be copied, but the copy is not linked to the original. If you change the original, the copy will not change.</p>
+
+            <pre lang="javascript">// The primitive data type String is stored as a value
+var person = "Kobe";  
+var anotherPerson = person; // anotherPerson = the value of person
+person = "Bryant"; // value of person changed
+            
+console.log(anotherPerson); // Kobe
+console.log(person); // Bryant</pre></p>
+            
+            <p>A reference data type can also be copied, but the copies are still linked; if you change 
+            the original data, the copy will reflect that change.</p>
+            
+            <p><pre lang="javascript">var person = {name: "Kobe"};
+var anotherPerson = person;
+person.name = "Bryant";
+            
+console.log(anotherPerson.name); // Bryant
+console.log(person.name); // Bryant</pre></p>
+            
+        </article>
+        
+        
+        <article>
+            <h2> Object Property attributes</h2>
+            <p>Object data properties have attributes (Configurable, Enumerable, and Writable). They are set true by default, but can be turned off. We believe this would be for security purposes, much like the public and private attributes in Ruby classes.</p>
+            <pre lang="javascript"></pre>
+        </article>
+        
+        
+        <article>
+            <h2>Ways to Create Objects</h2>
+            <p>- Object Literal
+
+<p>// This is an empty object initialized using the object literal notation
+var myBooks = {};
+
+// This is an object with 4 items, again using object literal
+var mango = {
+color: "yellow",
+shape: "round",
+sweetness: 8,
+
+howSweetAmI: function () {
+console.log("Hmm Hmm Good");
+}
+}
+
+<p>- Object Constructor: you have to make sure to use the new keyword
+
+<p>var mango =  new Object ();
+mango.color = "yellow";
+mango.shape= "round";
+mango.sweetness = 8;
+
+mango.howSweetAmI = function () {
+console.log("Hmm Hmm Good");
+}</p>
+            <pre lang="javascript"></pre>
+        </article>
+        
+        
+        <article>
+            <h2>Using Objects</h2>
+            <p>You can build a function that acts as a constructor to build multiple objects with similar attributes, but different values for those attributes. </p>
+            
+            <pre lang="javascript"><code>
+function Fruit (theColor, theSweetness, theFruitName, theNativeToLand) {
+    this.color = theColor;
+    this.sweetness = theSweetness;
+    this.fruitName = theFruitName;
+    this.nativeToLand = theNativeToLand;
+
+    this.showName = function () {
+        console.log("This is a " + this.fruitName);
+    }
+
+    this.nativeTo = function () {
+    this.nativeToLand.forEach(function (eachCountry)  {
+       console.log("Grown in:" + eachCountry);
+        });
+    }
+}
+
+var mangoFruit = new Fruit ("Yellow", 8, "Mango", ["South America", "Central America", "West Africa"]);
+mangoFruit.showName(); // This is a Mango.
+mangoFruit.nativeTo();
+//Grown in:South America
+// Grown in:Central America
+// Grown in:West Africa
+
+var pineappleFruit = new Fruit ("Brown", 5, "Pineapple", ["United States"]);
+pineappleFruit.showName(); // This is a Pineapple.
+            </code></pre>
+        </article>
+        
+        <article>
+            <h2>Accessing Object Properties</h2>
+            <p>There are 2 ways:</p>
+            <ol>
+                <li> <p>dot notation</p>
+                    <pre lang="javascript">
+// We have been using dot notation so far in the examples above, here is another example again:
+var book = {title: "Ways to Go", pages: 280, bookMark1:"Page 20"};
+// To access the properties of the book object with dot notation, you do this:
+console.log ( book.title); // Ways to Go
+console.log ( book.pages); // 280
+                    </pre>
+               </li>
+               <li>
+                   <p>bracket notation</p>
+                   <pre lang="javascript">
+// To access the properties of the book object with bracket notation, you do this:
+console.log ( book["title"]); //Ways to Go
+console.log ( book["pages"]); // 280
+
+//Or, in case you have the property name in a variable:
+var bookTitle = "title";
+console.log ( book[bookTitle]); // Ways to Go
+console.log (book["bookMark" + 1]); // Page 20 
+               </pre>
+               </li>
+           </ol>
+
+        </article>
+        
+        <article>
+            <h2>Object properties: Own vs Inherited</h2>
+            <p>Own: defined in the object</p>
+            <p> Inherited: come from the object&#39;s prototype object</p>
+        </article>
+    </div>
+    <div id="glossary">
+        <h2>Glossary of methods and operators</h2>
+        
+        <li>hasOwnProperty: used to see if an object has a specific property as one of its own properties, specifically excluding inherited properties. </li>
+        <li>for (var in object): a basic loop structure in JavaScript. It can be used to access  all of the properties in a JavaScript Object. </li>
+        <pre lang="javascript">
+ //Use of the for/in loop to access the properties in the school object
+for (var eachItem in object) {
+  console.log(eachItem); // Prints schoolName, schoolAccredited, schoolLocation
+}</pre>
+        <li>this: this is a keyword. this always refers the the owner of the function we are executing. In this example, 'this' refers to HigherLearning. 
+<pre lang="javascript">function HigherLearning () {
+this.educationLevel = "University";
+}</pre>
+           reference- http://www.quirksmode.org/js/this.html</li>
+           
+        <li>   delete: Used to delete a property from an object.
+        <pre lang="javascript">
+var christmasList = {mike:"Book", jason:"sweater" }
+delete christmasList.mike; // deletes the mike property</pre>
+        </li>
+    </div>
+  </body>
