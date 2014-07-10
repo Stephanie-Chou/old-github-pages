@@ -1,0 +1,70 @@
+body {
+  background-color: #00FFBF;
+  font-family: 'Helvtica', sans-serif;
+  color: #042037;
+}
+
+div {
+  
+}
+
+article {
+  
+}
+
+h1 { 
+  color: #718DA5;
+  text-align: center;
+}
+
+h2 {
+
+  color: #718DA5;
+  
+}
+
+p {
+  
+}
+
+/*http://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ background-color: #8180B2;
+ padding: 15px;
+ border-radius: 20px;
+ border: 1px solid #090A3B;
+ color:#fff;
+}
+#title {
+  
+}
+
+#main {
+  background-color: #fff;
+  float: left;
+  margin: auto;
+  width: 60%;
+  padding:15px;
+}
+
+#glossary {
+  background-color: #fff; 
+  float: right;
+  margin: auto;
+  width: 30%;
+  padding:15px;
+}
+
+.definition{
+ background-color: #fff;
+ padding: 0px;
+ border-radius: 0px;
+ color:#042037;
+ border: none;
+}
