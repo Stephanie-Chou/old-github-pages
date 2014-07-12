@@ -5,6 +5,7 @@
 	<title>DBC Technical Blog</title>
 	<link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet' type='text/css'>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 		
 <body>	
@@ -52,12 +53,12 @@
 				<h4> What is SQL Inject?</h4>
 				<p>SQL injection is a way of attacking a database. The malicious DQL code is intended to fool the application and convince it that it wants to run the malicious code which will cause unintended results.
 				For example, the original code may look like
-				<pre lang='sql'>SELECT first_name FROM directory WHERE last_name='chang' '; </pre>
+				<pre class="prettyprint lang-sql">SELECT first_name FROM directory WHERE last_name='chang' '; </pre>
 
-				Here, <pre lang='sql'>'chang' </pre>is the intended input but there is an extra closing quotation mark which leaves the code open for exploitation. A SQL injection would take advantage of the extra quotation and write:
+				Here, <pre class="prettyprint lang-sql">'chang' </pre>is the intended input but there is an extra closing quotation mark which leaves the code open for exploitation. A SQL injection would take advantage of the extra quotation and write:
 
-				<pre lang='sql'>SELECT first_name FROM director WHERE last_name='chang' or '1' ='1';</pre>
-				Here, the users input is <pre lang='sql'>'chang' or '1'='1</pre>
+				<pre class="prettyprint lang-sql">SELECT first_name FROM director WHERE last_name='chang' or '1' ='1';</pre>
+				Here, the users input is <pre class="prettyprint lang-sql">'chang' or '1'='1</pre>
 				This will always read as a true statement and therefore, no matter what- that line of SQL code will return whatever the malicious code is seeking.
 				</p>
 
