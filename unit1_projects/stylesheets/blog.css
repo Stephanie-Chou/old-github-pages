@@ -1,7 +1,7 @@
 body{
 	color: #fff;/*#303134;*/
 	height: 100%;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'PT Sans', sans-serif; /*'Voltaire', sans-serif;*/
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
@@ -175,7 +175,7 @@ article{
 	border-radius: 20px;
 	padding: 15px;
 	z-index: -1;
-	opacity: .95;
+	opacity: .9;
 }
 
 article img{
