@@ -16,6 +16,7 @@ https://stephanie-chou.github.io/unit1_projects/images/baybridge.png"
 }
 
 
+
 html{
 	height: 100%;
 }
@@ -118,6 +119,8 @@ footer p{
 	text-align: center;
 }
 
+
+
 nav{
 
 	width: 100%;
@@ -196,6 +199,13 @@ pre {
 	background-color: black;
 }
 
+
+.quote{
+	display: block;
+	font-size: 1.33em;
+	font-style: italic;
+	padding: 20px;
+}
 
 nav a{
 	color: #fff;
