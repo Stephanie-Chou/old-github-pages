@@ -192,12 +192,6 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.circle{
-	height: 100px;
-	width: 100px;
-	border-radius: 50%;
-	background-color: black;
-}
 
 
 .quote{
@@ -274,3 +268,37 @@ th{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 
 }
+
+
+/*used in tech blog 2*/
+
+.circle{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: orange;
+}
+
+.rectangle{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+
+.fixed{
+	float: right;
+	position: fixed;
+	z-index: 99;
+	right: 0px;
+	bottom: 0px;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+
