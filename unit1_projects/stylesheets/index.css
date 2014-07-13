@@ -126,26 +126,32 @@ li a:hover{
 .content{
 	float: left;
 	width: 30%;
+	margin: 40px;
 }
 
 .opaque{
-	float: left;
-	padding: 20px;
-	margin: 40px;
-	width: 100%;
-	background-color:#000;
 	opacity: .8;
-	z-index: -1
 }
 
-.opaque p{
+.infobox{
+	float: left;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color:#000;
+	z-index: -1
+
+}
+
+.infobox p{
 	color: #fff;
 }
-.opaque h1{
+.infobox h1{
 	line-height: 1.33em;
 }
 
-.opaque img{
+#gravatar{
 	display: inline-block;
 	float: left;
 	margin-right: 20px;
@@ -153,20 +159,24 @@ li a:hover{
 	width: 50%;
 	border-radius: 100%;
 }
-
 .social{
-	float: right;
-	margin-bottom: 20px;
-	opacity: .95;
+	background-color: transparent;
+	margin: 0px;
 }
 
-.social:hover{
-	background-color: white;
+.social a img{
+	position: relative;
+	display: inline;
+	height: 40px;
+	width: auto;
+	opacity: 1;
 }
-.social img:hover{
+
+.social a:hover img{
+	opacity: .7;
 	-webkit-filter: sepia(100%);
-
 }
+
 
 #blog{
 /*	height: 100%;
@@ -227,6 +237,9 @@ article img{
 	margin:0px;
 	padding:0px;
 }
+
+
+
 
 
 /*h1{
