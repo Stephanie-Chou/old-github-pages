@@ -9,7 +9,7 @@
 	  	body {
 	   margin: 0;
 	   padding: 0;
-	   background: #EEE;
+	   background: #000;
 	   font: 10px/13px 'Lucida Sans',sans-serif;
 	}
 	.wrap {
@@ -29,9 +29,11 @@
 	   top: 10px;
 	   bottom: 10px;
 	   overflow: hidden;
+	   
 	}
 	.boxInner img {
 	   width: 100%;
+
 	}
 	.boxInner .titleBox {
 	   position: absolute;
@@ -81,6 +83,50 @@
 	   }
 	}
 
+
+
+	#games{
+		background: url("http://stephanie-chou.github.io/images/GAMES.png" );
+		background-size: cover;
+	}
+
+
+	#spotlight{
+		background: url("http://stephanie-chou.github.io/images/IMG_0720.png");
+		background-size: cover;
+	}
+	#cube{
+		background: url("http://stephanie-chou.github.io/images/JEskype.png");
+		background-size: cover;
+	}
+
+	#cs{
+		background: url("http://stephanie-chou.github.io/images/mosaicfun.png");
+		background-size: cover;
+	}
+
+	#eng100{
+		background: url("http://stephanie-chou.github.io/images/iefx.png");
+		background-size: cover;
+	}
+
+	#hats{
+		background: url("https://www.canadahelps.org/image_ssl.aspx?ID=101299");
+		background-size: cover;
+	}
+
+	#DBC{
+		background: url("http://cdn.evbuc.com/eventlogos/28578437/4809359925-1.png");
+		background-size: cover;
+	}
+
+	#seniorDesign{
+		background: url("http://stephanie-chou.github.io/images/.png");
+		background-size: cover;
+	}
+
+
+
 	/* resource for all the awesomeness that just happened here. http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/*/
   </style> 
 </head> 
@@ -90,33 +136,32 @@
     
     <!-- Define all of the tiles: -->
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
-        <div class="titleBox">Butterfly</div>
+      <div class="boxInner" id = "games">
+        <!-- <img src="http://stephanie-chou.github.io/images/GAMES.png" /> -->
+        <div class="titleBox">GAMES Camp</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
-        <div class="titleBox">An old greenhouse</div>
+      <div class="boxInner" id="spotlight">
+        <div class="titleBox">Spotlight</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
-        <div class="titleBox">Purple wildflowers</div>
+      <div class="boxInner" id = "cube" >
+        <img src="http://stephanie-chou.github.io/images/JEskype.png" />
+        <div class="titleBox">CUBE Consulting</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
-        <div class="titleBox">A birdfeeder</div>
+      <div class="boxInner" id = "eng100">
+        <img src="http://stephanie-chou.github.io/images/mosaicfun.png" />
+        <div class="titleBox">University of Illinois</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
-        <div class="titleBox">Crocus close-up</div>
+      <div class="boxInner" id = "cs">
+        <img src="http://stephanie-chou.github.io/images/iefx.png" />
+        <div class="titleBox">Engineering 100</div>
       </div>
     </div>
     <div class="box">
