@@ -3,7 +3,7 @@ body{
 	height: 100%;
 	font-family: 'PT Sans', sans-serif; /*'Voltaire', sans-serif;*/
 	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
-	background: url() top center;
+	background: url("http://stephanie-chou.github.io/images/ystone-1593.jpg") top center;
 	background-position: fixed;
 	background-attachment: fixed;
 	background-size: cover;
@@ -87,7 +87,7 @@ footer p{
 	position:relative;
 	width: 25%;
 	background-color: #000;/*#C1C6D2;*/
-	opacity: .95;
+	opacity: .85;
 }
 
 .mainSec{
@@ -176,7 +176,7 @@ article{
 	border-radius: 20px;
 	padding: 15px;
 	z-index: -1;
-	opacity: .9;
+	opacity: .7;
 }
 
 article img{
