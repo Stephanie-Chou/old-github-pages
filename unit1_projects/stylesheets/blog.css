@@ -2,7 +2,8 @@ body{
 	color: #fff;/*#303134;*/
 	height: 100%;
 	font-family: 'PT Sans', sans-serif; /*'Voltaire', sans-serif;*/
-	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
+	background: url() top center;
 	background-position: fixed;
 	background-attachment: fixed;
 	background-size: cover;
