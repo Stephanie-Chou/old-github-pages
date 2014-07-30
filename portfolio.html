@@ -3,12 +3,12 @@
 <head> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   
-  <title>Responsive Tiled Photo Gallery</title>
+  <title>Portfolio</title>
   
   <style type="text/css">
-	  	body {
+	  body {
 	   margin: 0;
-	   padding: 0;
+	   padding: 40px;
 	   background: #000;
 	   font: 10px/13px 'Lucida Sans',sans-serif;
 	}
@@ -29,6 +29,8 @@
 	   top: 10px;
 	   bottom: 10px;
 	   overflow: hidden;
+	   -webkit-filter: grayscale(100%);
+	}
 	   
 	}
 	.boxInner img {
@@ -50,6 +52,12 @@
 	   -moz-transition: all 0.3s ease-out;
 	   -o-transition: all 0.3s ease-out;
 	   transition: all 0.3s ease-out;
+	}
+
+	.boxInner:hover{
+		-webkit-filter: none;
+
+
 	}
 	body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
 	   margin-bottom: 0;
@@ -95,6 +103,7 @@
 		background: url("http://stephanie-chou.github.io/images/IMG_0720.png");
 		background-size: cover;
 	}
+	
 	#cube{
 		background: url("http://stephanie-chou.github.io/images/JEskype.png");
 		background-size: cover;
@@ -103,26 +112,31 @@
 	#cs{
 		background: url("http://stephanie-chou.github.io/images/mosaicfun.png");
 		background-size: cover;
+	
 	}
 
 	#eng100{
 		background: url("http://stephanie-chou.github.io/images/iefx.png");
 		background-size: cover;
+
 	}
 
 	#hats{
 		background: url("https://www.canadahelps.org/image_ssl.aspx?ID=101299");
 		background-size: cover;
+
 	}
 
 	#DBC{
-		background: url("http://cdn.evbuc.com/eventlogos/28578437/4809359925-1.png");
+		background: url("http://poachedmag.com/wp-content/uploads/2013/07/dev-bootcamp.jpg");
 		background-size: cover;
+
 	}
 
-	#seniorDesign{
-		background: url("http://stephanie-chou.github.io/images/.png");
+	#seniordesign{
+		background: url("http://stephanie-chou.github.io/images/seniordesign.png");
 		background-size: cover;
+
 	}
 
 
@@ -148,62 +162,33 @@
     </div>
     <div class="box">
       <div class="boxInner" id = "cube" >
-        <img src="http://stephanie-chou.github.io/images/JEskype.png" />
         <div class="titleBox">CUBE Consulting</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner" id = "eng100">
-        <img src="http://stephanie-chou.github.io/images/mosaicfun.png" />
         <div class="titleBox">University of Illinois</div>
       </div>
     </div>
     <div class="box">
       <div class="boxInner" id = "cs">
-        <img src="http://stephanie-chou.github.io/images/iefx.png" />
         <div class="titleBox">Engineering 100</div>
       </div>
     </div>
+    
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
-        <div class="titleBox">The garden shop</div>
+      <div class="boxInner" id = "DBC">
+        <div class="titleBox">Dev Bootcamp</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
-        <div class="titleBox">Spring daffodils</div>
+      <div class="boxInner" id = "hats">
+        <div class="titleBox">HATS Haiti</div>
       </div>
     </div>
     <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
-        <div class="titleBox">Iris along the path</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
-        <div class="titleBox">The garden blueprint</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
-        <div class="titleBox">The patio</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
-        <div class="titleBox">Bumble bee collecting nectar</div>
-      </div>
-    </div>
-    <div class="box">
-      <div class="boxInner">
-        <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
-        <div class="titleBox">Winding garden path</div>
+      <div class="boxInner" id = "seniordesign">
+        <div class="titleBox">Senior Deign</div>
       </div>
     </div>
     
