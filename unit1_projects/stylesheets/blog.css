@@ -1,5 +1,5 @@
 body{
-	color: #fff;/*#303134;*/
+	color: #000;/*#303134;*/
 	height: 100%;
 	font-family: 'PT Sans', sans-serif; /*'Voltaire', sans-serif;*/
 	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
@@ -86,8 +86,8 @@ footer p{
 	float: left;
 	position:relative;
 	width: 25%;
-	background-color: #000;/*#C1C6D2;*/
-	opacity: .85;
+	background-color: #000;/*#C1C6D2;
+*/	opacity: .65;
 }
 
 .mainSec{
@@ -98,6 +98,9 @@ footer p{
 	min-height: 100%;
 }
 
+.navSec p{
+	color: #fff;
+}
 .navSec img{
 	display: inline-block;
 	float: center;
@@ -131,8 +134,8 @@ nav{
 	left:0px;
 	top: 0px;
 	margin-right: 100px;
-	background-color: #000;/*#C1C6D2;*/
-	z-index: 99;
+/*	background-color: #808080;/*#C1C6D2;*/
+*/	z-index: 99;
 }
 
 nav li{
@@ -168,15 +171,15 @@ nav img{
 article{
 	width: 100%;
 	min-height: 300px;
-	background-color: #000;/*#fff ;*/
-	margin-top: 10%;
+/*	background-color: #808080;/*#fff ;*/
+*/	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
 	border-radius: 20px;
 	padding: 15px;
 	z-index: -1;
-	opacity: .7;
+	opacity: 1;
 }
 
 article img{
