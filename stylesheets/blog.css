@@ -88,6 +88,7 @@ footer p{
 	width: 25%;
 	background-color: #000;/*#C1C6D2;
 */	opacity: .85;
+	position: fixed;
 }
 
 .mainSec{
@@ -111,6 +112,7 @@ footer p{
 	margin-right: auto;
 	padding: 20px;
 	border-radius:100%;
+
 }
 
 .container{
