@@ -1,0 +1,313 @@
+body{
+	color: #000;/*#303134;*/
+	height: 100%;
+	font-family: 'Open Sans', sans-serif; /*'Voltaire', sans-serif;*/
+	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
+/*	background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1593.jpg") top center;
+*/	background-position: fixed;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	margin: 0px;
+
+	/*"../images/baybridge.png"
+https://stephanie-chou.github.io/unit1_projects/images/baybridge.png"
+	*/
+}
+
+
+
+html{
+	height: 100%;
+}
+
+.page{
+	min-height: 100%;
+	background: url("../images/baybridge.png") center right fixed;
+	/*background-image: url("../images/graynoise.png");
+	background-repeat: repeat;*/
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+
+}
+
+header{
+	width: 100%;
+	background-color: #109d61;
+	min-height: 200px;
+	position: fixed;
+	left: 0px
+	top: 0px;
+
+}
+
+#wrapper{
+	min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin-bottom:-100px;
+}
+
+#push{
+	height: 100px;
+}
+#wrapper:after{
+	content: "";
+	display: block;
+	height: 100px;
+}
+
+footer{
+	height: 100px;
+	width: 100%;
+	background-color:#000;/* #C1C6D2;*/
+	margin-top: 20px;
+	float: left;
+	left: 0px;
+	bottom: 0px;
+	opacity: .95;
+
+}
+
+footer p{
+	text-align: center;
+	color: #fff;
+}
+/*.dropdown{
+	display: none;
+}*/
+
+
+.navSec{
+	display: inline;
+	float: left;
+	position:relative;
+	width: 25%;
+	background-color: #000;/*#C1C6D2;
+*/	opacity: .85;
+}
+
+.mainSec{
+	display: inline;
+	float: right;
+	position: relative;
+	width: 75%;
+	min-height: 100%;
+}
+
+.navSec p{
+	color: #fff;
+}
+.navSec img{
+	display: inline-block;
+	float: center;
+	width: 90%;
+	height: width;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius:100%;
+}
+
+.container{
+	width: 80%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.navSec h4{
+	text-align: center;
+}
+
+
+
+nav{
+
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top:-10%;
+	left:0px;
+	top: 0px;
+	margin-right: 100px;
+/*	background-color: #808080;/*#C1C6D2;*/
+*/	z-index: 99;
+}
+
+nav li{
+	padding: 10px;
+	/*display: none;*/
+}
+nav p{
+
+	/*display: none;*/
+}
+nav h4{
+	text-transform: uppercase;
+	color: #805415; /*#109d61;*/
+	text-align: center;
+}
+
+nav h4{
+	text-align: center;
+}
+
+nav img{
+	display: inline-block;
+	float: center;
+	width: 90%;
+	height: width;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border-radius: 100%;
+}
+
+article{
+	width: 100%;
+	min-height: 300px;
+/*	background-color: #808080;/*#fff ;*/
+*/	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	border-radius: 20px;
+	padding: 15px;
+	z-index: -1;
+	opacity: 1;
+}
+
+article img{
+	display: inline;
+	padding: 10px;
+	height: 150px;	
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+.quote{
+	display: block;
+	font-size: 1.33em;
+	font-style: italic;
+	padding: 20px;
+}
+
+
+nav a{
+	color: #fff;
+}
+
+nav a:hover{
+	color: #805415;
+}
+
+a{
+	color:#805415;
+}
+a:visited {
+	color: #C1C6D2;
+}
+
+a:hover {
+	color: #C1C6D2;
+}
+
+
+h1{
+	font-size: 3.33em;
+	text-align: center;
+	line-height: 2.33em;
+
+}
+
+h2{
+	font-size: 2.33em;
+	line-height: 1.33em;
+	/*color: #109d61;*/
+	color:#805415;
+}
+
+h3{
+	font-size: 1.66em;
+	line-height: 1em;
+}
+
+p{
+	font-size: 1em;
+	line-height: 1.33em;
+	margin-top: 5px;
+	padding-top: 15px;
+}
+
+b{
+	font-weight: bold;
+}
+
+.date{
+	text-transform: uppercase;
+	/*color: #109d61;*/
+	color: #805415;
+}
+
+table, th, td {
+	border: 1px solid gray;
+}
+
+th{
+	background-color: gray;
+	padding: 5px;
+}
+
+
+
+/*IPAD*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+}
+
+
+/*used in tech blog 2*/
+
+.circle{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: orange;
+}
+
+.rectangle{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+
+.fixed{
+	float: right;
+	position: fixed;
+	z-index: 99;
+	right: 0px;
+	bottom: 0px;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+

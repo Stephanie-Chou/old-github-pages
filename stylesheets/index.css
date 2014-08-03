@@ -1,0 +1,285 @@
+
+body{
+/*
+	background color:#000;
+	color: #303134;
+	padding: 0px;
+	margin:0px;*/
+
+	color: #fff;/*#303134;*/
+	height: 100%;
+	font-family: 'PT Sans', sans-serif;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	margin: 0px;
+}
+
+html{
+	height: 100%;
+}
+
+#body_bg{
+	color: #fff;/*#303134;*/
+	height: 100%;
+	font-family: 'Voltaire', sans-serif;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	margin: 0px;
+}
+
+
+section{
+	width:100%;
+	float: left;
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	width:70%;
+	margin: 0px auto;
+	
+}
+/*nav{
+	background-color: #C1C6D2;
+	position:absolute;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	z-index: 99;
+}
+nav li{
+	display: inline;
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	color: #109d61;
+}
+
+nav li a{
+	color:#303134;
+}
+nav li a:hover{
+	color: #109d61;
+}
+
+nav ul{
+	display: none;
+	position: absolute;
+	background-color: #C1C6D2;
+}
+
+nav ul li{
+	display: list-item;
+	list-style: none;
+	float: none;
+}
+
+nav li:hover ul{
+	width: 150px;
+	padding-right: 20px;
+	position: relative;
+	display: list-item;
+	z-index: 99;
+}
+
+li{
+	display: inline-block;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	color: white;
+	text-align: center;
+}
+
+
+li a:hover{
+	color: #109d61;
+}*/
+
+
+#home{
+	background-image: url("../images/beachLR.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about{
+/*	background-image: url("../images/stephanie2_med.png");*/	
+	background-image: url("../images/beach.png");
+	min-height: 600px;
+	background-color: #000;/* #175e94 ;*/
+	background-size: cover;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+
+.content{
+	float: left;
+	width: 30%;
+	margin: 40px;
+}
+
+.opaque{
+	opacity: .8;
+}
+
+.infobox{
+	float: left;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color:#000;
+	z-index: -1
+
+}
+
+.infobox p{
+	color: #fff;
+}
+.infobox h1{
+	line-height: 1.33em;
+}
+
+#gravatar{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	height:50%;
+	width: 50%;
+	border-radius: 100%;
+}
+.social{
+	background-color: transparent;
+	margin: 0px;
+}
+
+.social a img{
+	position: relative;
+	display: inline;
+	height: 40px;
+	width: auto;
+	opacity: 1;
+}
+
+.social a:hover img{
+	opacity: .7;
+	-webkit-filter: sepia(100%);
+}
+
+
+#blog{
+/*	height: 100%;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #000;*/
+}
+
+
+
+article{
+	display: block-inline;
+	width: 70%;
+	background-color: #000 ;
+	opacity: .95;
+
+	/*box-shadow: 5px 5px 5px #042f4f;*/
+	min-height: 300px;
+	margin-left: 20%;
+	margin-top: 10%;
+	padding: 15px;
+	z-index: -1;
+	
+}
+
+article p{
+	color: #fff;
+}
+
+article a{
+	color: #805415;
+}
+
+article li{
+	color: #fff;
+}
+
+
+article img{
+	display: inline;
+	padding: 10px;
+	height: 150px;
+	
+}
+
+#places{
+	background-image: url("../images/graynoise.png");
+	background-repeat: repeat;
+	color: #000;
+}
+
+#places img{
+	width: 49%;
+	height: auto;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+
+/*h1{
+	font-size: 3.33em;
+	text-align: center;
+	line-height: 3.33em;
+	color: #109d61;
+
+}
+
+h2{
+	font-size: 2.66em;
+	line-height: 2.33em;
+	color: #109d61;
+}
+
+h3{
+	font-size: 2em;
+	line-height: 1em;
+}
+
+h4{
+	font-size: 1.33em;
+	line-height: 1em;1
+}
+
+p{
+	font-size: 1em;
+	line-height: 1.33em;
+	margin-top: 5px;
+	padding-top: 15px;
+}*/
+
+@media (min-device-width : 320px) and (max-device-width : 480px){
+	article{
+		float: center;
+		width: 45%;
+	}
+	.content{
+		float: left;
+		width: 45%;
+	}
+}
