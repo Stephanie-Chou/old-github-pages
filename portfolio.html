@@ -19,7 +19,7 @@
     /*font-family: 'Macondo Swash Caps', cursive;
     */
 	font-family: 'Open Sans', sans-serif;
-    font-size: 4em;
+    font-size: 5em;
     text-align: left;
     color: #805415;
   }
@@ -32,6 +32,7 @@
 	   position: relative;
 	   width: 20%;
 	   padding-bottom: 20%;
+
 	}
 	.boxInner {
 	   position: absolute;
@@ -40,6 +41,7 @@
 	   top: 10px;
 	   bottom: 10px;
 	   overflow: hidden;
+
 	   -webkit-filter: grayscale(100%);
 	}
 
@@ -105,8 +107,11 @@
 
 
 	#games{
-		background: url("/images/games.png" ) center, center;
+		background: url("http://stephanie-chou.github.io/images/GAMES.png" ) center, center;
 		background-size: 100%;
+		background-repeat: no-repeat;
+		background-color: #fff;
+
 	}
 
 
@@ -118,6 +123,8 @@
 	#cube{
 		background: url("http://ifoundry.illinois.edu/sites/default/files/images/junior_enterprise_logo_a_0.jpg") center, center ;
 		background-size: 100%;
+		background-repeat: no-repeat;
+		background-color: #fff;
 	}
 
 	#cs{
@@ -135,6 +142,8 @@
 	#hats{
 		background: url("https://www.canadahelps.org/image_ssl.aspx?ID=101299") center, center;
 		background-size: 100%;
+		background-repeat: no-repeat;
+		background-color: #fff;
 	}
 
 /*	#DBC{
@@ -155,11 +164,14 @@
 
 	}
 
-  #eaton{
+  	#eaton{
      background: url("http://solarbuildermag.com/wp-content/uploads/2011/11/eaton.gif") center, center;
      background-size: cover;
-
-  }
+ 	}
+  	#hackillinois{
+  		background: url("http://stephanie-chou.github.io/images/hackillinois.png") center, center;
+  		background-size: cover;
+  	}
 
 	/* resource for all the awesomeness that just happened here. http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/*/
   </style>
@@ -195,12 +207,14 @@
         <div class="titleBox">University of Illinois</div>
       </div>
     </div>
-<h1> Portfolio </h1>
+
     <div class="box">
       <div class="boxInner" id = "cs">
         <div class="titleBox">Engineering 100</div>
       </div>
     </div>
+
+    <h1> Portfolio </h1>
 
     <div class="box">
       <div class="boxInner" id = "hats">
@@ -223,6 +237,12 @@
     <div class="box">
       <div class="boxInner" id = "eaton">
         <div class="titleBox">Eaton</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner" id = "hackillinois">
+        <div class="titleBox">hackillinois</div>
       </div>
     </div>
 
