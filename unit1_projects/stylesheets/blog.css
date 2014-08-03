@@ -3,12 +3,12 @@ body{
 	height: 100%;
 	font-family: 'Open Sans', sans-serif; /*'Voltaire', sans-serif;*/
 	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
-	background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1593.jpg") top center;
-	background-position: fixed;
+/*	background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1593.jpg") top center;
+*/	background-position: fixed;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: black;
+	background-color: #fff;
 	margin: 0px;
 
 	/*"../images/baybridge.png"
@@ -87,7 +87,7 @@ footer p{
 	position:relative;
 	width: 25%;
 	background-color: #000;/*#C1C6D2;
-*/	opacity: .65;
+*/	opacity: .85;
 }
 
 .mainSec{
@@ -250,6 +250,10 @@ p{
 	line-height: 1.33em;
 	margin-top: 5px;
 	padding-top: 15px;
+}
+
+b{
+	font-weight: bold;
 }
 
 .date{
