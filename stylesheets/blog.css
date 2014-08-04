@@ -148,19 +148,15 @@ nav li{
 	padding: 10px;
 	/*display: none;*/
 }
-nav p{
 
-	/*display: none;*/
-}
 nav h4{
 	text-transform: uppercase;
 	color: #805415; /*#109d61;*/
 	text-align: center;
+	font-weight: 100;
 }
 
-nav h4{
-	text-align: center;
-}
+
 
 nav img{
 	display: inline-block;
@@ -259,7 +255,7 @@ p{
 	line-height: 1.33em;
 	margin-top: 5px;
 	padding-top: 15px;
-	
+
 }
 
 b{
