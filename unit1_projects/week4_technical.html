@@ -61,5 +61,19 @@
         <div id="push"></div>
     </div>
     <footer> <p>Created by Stephanie Chou</p></footer>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script type="text/javascript">
+	 	$("#menu").click (function(){
+	 		$(".navSec").toggle("slow");
+
+
+	 		var toggleWidth = ($(".mainSec").width()/ $('.mainSec').parent().width() * 100);
+	 		 //alert(Math.round(toggleWidth));
+	 		toggleWidth = Math.round(toggleWidth) == 75 ? "100%" : "75%";
+	 		$('.mainSec').animate({ width: toggleWidth });
+	 	});
+
+	 </script>
 </body>
 </html>
