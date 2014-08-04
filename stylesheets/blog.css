@@ -236,6 +236,7 @@ h1{
 	font-size: 3.33em;
 	text-align: center;
 	line-height: 2.33em;
+	font-weight: 100;
 
 }
 
@@ -244,11 +245,13 @@ h2{
 	line-height: 1.33em;
 	/*color: #109d61;*/
 	color:#805415;
+	font-weight: 100;
 }
 
 h3{
 	font-size: 1.66em;
 	line-height: 1em;
+	font-weight: 100;
 }
 
 p{
@@ -256,6 +259,7 @@ p{
 	line-height: 1.33em;
 	margin-top: 5px;
 	padding-top: 15px;
+	
 }
 
 b{
