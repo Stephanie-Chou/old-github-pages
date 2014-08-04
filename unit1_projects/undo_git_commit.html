@@ -38,11 +38,11 @@
 				<p> Tonight, I did something even worse than pushing to the DBC master. I had extra files floating around in my repository so I thought I'd delete them in one fell swoop. I typed 'git rm . -r'. Apparently, that literally deletes all the files in your repository. All of them. Needless to say, I panicked the hell out. Wouldn't you?</p>
 				<p> Luckily, because of past mistakes, this egregious error could be immediately rectified. Here is how you do it: </p>
 				<ol>
-					<li>In command line type: git log</li>
+					<li>In command line type: <div class="console">git log</div></li>
 					<li> In that log, you'll see a list with commit names and commit ids. Those are the long numbers. Copy/paste the commit id of the last commit where your code was still good. </li>
 					<li> Now, get out of the long list by hitting enter a lot. I don't know how else to do it.</li>
-					<li> In command line type: 'git reset --hard <commit_id>'</li>
-					<li> In command line type: git push -f origin </li>
+					<li> In command line type: <div class="console">git reset --hard commit_id</div></li>
+					<li> In command line type: <div class="console">git push -f origin </div></li>
 
 				</ol>
 				
