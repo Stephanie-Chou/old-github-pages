@@ -88,8 +88,8 @@ footer p{
 	width: 25%;
 	background-color: #000;/*#C1C6D2;
 */	opacity: .85;
-	position: fixed;
-}
+/*	position: fixed;
+*/}
 
 .mainSec{
 	display: inline;
@@ -113,6 +113,10 @@ footer p{
 	padding: 20px;
 	border-radius:100%;
 
+}
+
+#menu{
+	
 }
 
 .container{
