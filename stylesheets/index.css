@@ -7,6 +7,7 @@ body{
 	margin:0px;*/
 
 	color: #fff;/*#303134;*/
+
 	height: 100%;
 	font-family: 'PT Sans', sans-serif;
 	background: url("http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg") top center;
@@ -149,6 +150,7 @@ li a:hover{
 }
 .infobox h1{
 	line-height: 1.33em;
+
 }
 
 #gravatar{

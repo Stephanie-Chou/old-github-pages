@@ -122,7 +122,8 @@ footer p{
 }
 
 #menu{
-	
+	border-radius: 20%;
+/*	border:#000 4px solid;*/
 }
 
 .container{
@@ -223,14 +224,13 @@ nav a:hover{
 }
 
 a{
-	color:#805415;
-}
-a:visited {
-	color: #C1C6D2;
+	font-weight: 700;
+	color:#000;
 }
 
+
 a:hover {
-	color: #C1C6D2;
+	color: #805415;
 }
 
 
