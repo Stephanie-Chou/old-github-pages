@@ -15,25 +15,48 @@
 
 	body{
 		font-family: 'Open Sans', sans-serif;
-		background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1343.jpg") top center;
+		font-weight: 100;
+/*		background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1343.jpg") top center;
+		background-position: fixed;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 25px;*/
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+		
+	}
+
+	.backgroundcontainer{
+		float: left;
+		position: absolute;
+
+		height: inherit;
+		width: inherit;
+		background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1593.jpg") top center;
 		background-position: fixed;
 		background-attachment: fixed;
 		background-size: cover;
 		background-repeat: no-repeat;
 		padding: 25px;
-		height: 100%;
+		background-color: black;
 	}
-
 	#introbox {
 
 		float: right;
 		vertical-align: center;
-		max-height: 40%;
-		max-width: 50%
+		max-width: 50%;
+/*		background-color: white;
+		opacity: .55;
+		padding: 30px;*/
+
 	}
 
 	#introbox p {
 		text-align: justify;
+		text-indent:50px;
+
 	}
 
 	nav{
@@ -47,25 +70,25 @@
 	}
 
 	a {
-		color: #fff;
-	}
-
-	a:hover {
 		color: #000;
 	}
 
+	a:hover {
+		color: #fff;
+	}
+
 	h1 {
-/*font-family: 'Macondo Swash Caps', cursive;
-*/		
-font-family: 'Open Sans', sans-serif;
-font-weight: 100;
-font-size: 5em;
+		/*font-family: 'Macondo Swash Caps', cursive;
+		*/		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;
+		font-size: 5em;
 	}
 
 
 </style>
 <body>
-
+<div class="backgroundcontainer">
 	<h1>Stephanie Chou</h1>
 	<nav>
 		<a href=""><li>Food</li></a>
@@ -75,11 +98,11 @@ font-size: 5em;
 
 
 	<div id="introbox">
-		<p> &emsp; I recently graduated from the University of Illinois, Urbana-Champaign with a degree in Electrical Engineering. When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.'</p>
-		<p>&emsp; I spend my free time designing and redesigning this website and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition. </p>
-		<p>&emsp; I am currently participating in the Chicago Dev Bootcamp Cohort.</p>
+		<p>I recently graduated from the University of Illinois, Urbana-Champaign with a degree in Electrical Engineering. When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.'</p>
+		<p>I spend my free time designing and redesigning this website and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition. </p>
+		<p>I am currently participating in the Chicago Dev Bootcamp Cohort.</p>
 	</div>
-
+</div>
 
 </body>
 
