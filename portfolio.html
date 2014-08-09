@@ -2,7 +2,10 @@
 <html lang="en-US">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/touchscreen.js"></script> 
 
   <title>Portfolio</title>
 
@@ -11,8 +14,8 @@
 	   font-family: 'Open Sans', sans-serif;
 	   
 	   margin: 0;
-	   padding: 40px;
-	   background: #000;
+/*	   padding: 40px;
+*/	   background: #fff;
 	   color: #fff;
 	}
 
@@ -43,7 +46,8 @@
 	   top: 10px;
 	   bottom: 10px;
 	   overflow: hidden;
-
+	   border: solid 1px black;
+	   -webkit-box-sizing: border-box;
 	   -webkit-filter: grayscale(100%);
 	}
 
@@ -68,12 +72,24 @@
 	   -o-transition: all 0.3s ease-out;
 	   transition: all 0.3s ease-out;
 	}
-
+	.title{
+		background-color: #000;
+		opacity: .8;
+		color: #fff;
+		height: inherit;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		bottom: 0px;
+		visibility: hidden;
+	}
 	.boxInner:hover{
 		-webkit-filter: none;
-
-
 	}
+	.boxInner:hover .title{
+		visibility: visible;
+	}
+
 	body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
 	   margin-bottom: 0;
 	}
@@ -105,6 +121,7 @@
 	      padding-bottom: 25%;
 	   }
 	}
+
 
 
 
@@ -179,7 +196,25 @@
   </style>
 </head>
 <body>
+	<div id="wrapper">
+		<div class="navSec">
+			<nav>
+				<a href="https://stephanie-chou.github.io/index.html"><img src="unit1_projects/images/pygmalion.png"></a>
+				<div class="container">
+					<h4> About Me</h4>
+	                 <p> I recently graduated from the University of Illinois, Urbana-Champaign with a degree in Electrical Engineering. I am currently participating in the Chicago Dev Bootcamp Cohort. </p>
+            	</div>
 
+				<h4>Archive</h4>
+
+				<ul>
+					<li><a href="https://stephanie-chou.github.io/homepage.html">Home</a></li>
+					<li><a href="https://stephanie-chou.github.io/portfolio.html">Portfolio</a> </li>
+					<li><a href="https://stephanie-chou.github.io/blog.html">Blog Archive</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<img src="images/menu.png" id = "menu">
   
 
   <div class="wrap">
@@ -188,62 +223,74 @@
     <div class="box">
       <div class="boxInner" id = "games">
         <!-- <img src="http://stephanie-chou.github.io/images/GAMES.png" /> -->
+        <span class = "title">GAMES Camp</span>
         <div class="titleBox">GAMES Camp</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id="spotlight">
+      	<span class = "title">Spotlight</span>
         <div class="titleBox">Spotlight</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id = "cube" >
+      	<span class = "title">CUBE Consulting</span>
         <div class="titleBox">CUBE Consulting</div>
       </div>
     </div>
 
     <div class="box">
-      <div class="boxInner" id = "eng100">
+      <div class="boxInner" id = "cs">
+      	<span class = "title">UIUC</span>
         <div class="titleBox">University of Illinois</div>
       </div>
     </div>
 
     <div class="box">
-      <div class="boxInner" id = "cs">
-        <div class="titleBox">Engineering 100</div>
-      </div>
+    		
+	      <div class="boxInner" id = "eng100">
+	      	<span class = "title">Engineering 100</span>
+	        <div class="titleBox">Engineering 100</div>
+	      </div>
+     	
     </div>
 
     <h1> Portfolio </h1>
 
     <div class="box">
       <div class="boxInner" id = "hats">
+      	<span class = "title">HATS Haiti</span>
         <div class="titleBox">HATS Haiti</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id ="DBC">
+      	<span class = "title">Dev Bootcamp</span>
         <div class="titleBox">Dev Bootcamp</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id="seniordesign">
+      	<span class = "title">Senior Design</span>
         <div class="titleBox">senior design</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id = "eaton">
+      	<span class = "title">Eaton</span>
         <div class="titleBox">Eaton</div>
       </div>
     </div>
 
     <div class="box">
       <div class="boxInner" id = "hackillinois">
+      	<span class = "title">Hack Illinois</span>
         <div class="titleBox">hackillinois</div>
       </div>
     </div>
@@ -251,6 +298,19 @@
 
   </div>
   <!-- /#wrap -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
+	<script type="text/javascript">
+	 	$("#menu").click (function(){
+	 		$(".navSec").toggle("slow");
+
+
+	 		var toggleWidth = ($(".mainSec").width()/ $('.mainSec').parent().width() * 100);
+	 		 //alert(Math.round(toggleWidth));
+	 		toggleWidth = Math.round(toggleWidth) == 75 ? "100%" : "75%";
+	 		$('.mainSec').animate({ width: toggleWidth });
+	 	});
+
+	 </script>
 </body>
 </html>
