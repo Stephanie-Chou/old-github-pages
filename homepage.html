@@ -1,121 +1,392 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-	<title>Stephanie Chou- Eat, Code, Repeat.</title>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/blog.css" type="text/css" media="all">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/touchscreen.js"></script> 
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!-- 	<link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.css" type="text/css" media="all"> -->
-</head>
+  <title>Portfolio</title>
 
-<style type="text/css">
-	html{
-		height: 100%;
+  <style type="text/css">
+	  body {
+	   font-family: 'Open Sans', sans-serif;  
+	   margin: 0;
+/*	   padding: 40px;
+*/	   background: #0D0D0D;
+	   color: #fff;
 	}
 
-	body{
-		font-family: 'Open Sans', sans-serif;
-/*		font-weight: 100;
-*//*		background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1343.jpg") top center;
-		background-position: fixed;
-		background-attachment: fixed;
-		background-size: cover;
-		background-repeat: no-repeat;
-		padding: 25px;*/
-		padding: 0px;
-		margin: 0px;
-		height: 100%;
-		
+    h4 {
+    /*font-family: 'Macondo Swash Caps', cursive;
+    */
+	font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 100;
+    /*color: #805415;*/
+    color : #fff;
+    padding: 0px;
+    margin:0px;
+  }
+	.wrap {
+	   overflow: hidden;
+	   margin: 100px;
+	}
+	.box {
+	   float: left;
+	   position: relative;
+	   width: 33%;
+	   padding-bottom: 50%;
+	   
+
+	}
+	.boxInner {
+	   position: absolute;
+	   left: 10px;
+	   right: 10px;
+	   top: 10px;
+	   bottom: 10px;
+	   overflow: hidden;
+	   background-color: #252525;
+	   -webkit-filter: grayscale(100%);
 	}
 
-	.backgroundcontainer{
-		float: left;
+	.boxInner .content{
+		padding: 10px;
+	}
+	.boxInner .content img {
 		position: absolute;
+	   width: 100%;
+	}
 
+	.boxInner .titleBox {
+		color: white;
+	   position: absolute;
+	   bottom: 0;
+	   left: 0;
+	   right: 0;
+	   margin-bottom: -50px;
+	   background: #000;
+	   background: rgba(0, 0, 0, 0.5);
+	   color: #FFF;
+	   padding: 10px;
+	   text-align: center;
+	   -webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	   -o-transition: all 0.3s ease-out;
+	   transition: all 0.3s ease-out;
+	}
+	.title{
+		background-color: #000;
+		opacity: .8;
+		color: #fff;
 		height: inherit;
-		width: inherit;
-		background: url("http://stephanie-chou.github.io/images/Optimized-ystone-1593.jpg") center center;
-		background-position: fixed;
-		background-attachment: fixed;
-		background-size: 100%, 50%;
-		background-repeat: no-repeat;
-		padding: 50px;
-		background-color: black;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		bottom: 0px;
+		visibility: hidden;
 	}
-	#introbox {
-
-		float: right;
-		vertical-align: center;
-		max-width: 50%;
-/*		background-color: white;
-		opacity: .55;
-		padding: 30px;*/
-
+	.boxInner:hover{
+		-webkit-filter: none;
+	}
+	.boxInner:hover .title{
+		visibility: visible;
 	}
 
-	#introbox p {
-		text-align: justify;
-		text-indent:50px;
-		font-weight: 10;
-		color: #fff;
-		text-shadow:
-	    -1px -1px 0 #000,
-	    1px -1px 0 #000,
-	    -1px 1px 0 #000,
-	    1px 1px 0 #000;  
-	    
-
+	body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+	   margin-bottom: 0;
 	}
-
-	nav{
-
+	@media only screen and (max-width : 480px) {
+	   /* Smartphone view: 1 tile */
+	   .box {
+	      width: 100%;
+	      padding-bottom: 100%;
+	   }
 	}
-	nav li{
-		display: inline;
-		text-decoration: underline;
-		font-size: 2em;
-		margin: 10px;
+	@media only screen and (max-width : 650px) and (min-width : 481px) {
+	   /* Tablet view: 2 tiles */
+	   .box {
+	      width: 50%;
+	      padding-bottom: 50%;
+	   }
 	}
-
-	a {
-		color: #000;
-
+	@media only screen and (max-width : 1050px) and (min-width : 651px) {
+	   /* Small desktop / ipad view: 3 tiles */
+	   .box {
+	      width: 33.3%;
+	      padding-bottom: 33.3%;
+	   }
 	}
-
-	a:hover {
-		color: #fff;
-	}
-
-	h1 {
-		/*font-family: 'Macondo Swash Caps', cursive;
-		*/		
-		font-family: 'Open Sans', sans-serif;
-		color: #000;
-		font-weight: 100;
-		font-size: 5em;
-
+	@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+	   /* Medium desktop: 4 tiles */
+	   .box {
+	      width: 25%;
+	      padding-bottom: 25%;
+	   }
 	}
 
 
-</style>
+	/* resource for all the awesomeness that just happened here. http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/*/
+  </style>
+</head>
 <body>
-<div class="backgroundcontainer">
-	<h1>Stephanie Chou</h1>
-	<nav>
-		<a href=""><li>Food</li></a>
-		<a href="https://stephanie-chou.github.io/portfolio.html"><li>Code</li></a>
-		<a href="https://stephanie-chou.github.io/blog.html"><li>Blog</li></a>
-	</nav>
+
+	<div id="wrapper">
+		<div class="navSec">
+			<nav>
+				<a href="https://stephanie-chou.github.io/index.html"><img src="unit1_projects/images/pygmalion.png"></a>
+				<div class="container">
+					<h4> About Me</h4>
+	                 <p> I recently graduated from the University of Illinois, Urbana-Champaign with a degree in Electrical Engineering. I am currently participating in the Chicago Dev Bootcamp Cohort. </p>
+            	</div>
+
+				<h4>Archive</h4>
+
+				<ul>
+					<li><a href="https://stephanie-chou.github.io/homepage.html">Home</a></li>
+					<li><a href="https://stephanie-chou.github.io/portfolio.html">Portfolio</a> </li>
+					<li><a href="https://stephanie-chou.github.io/blog.html">Blog Archive</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<img src="images/menu.png" id = "menu">
+  <div class="wrap">
 
 
-	<div id="introbox">
-		<p>I recently graduated from the University of Illinois, Urbana-Champaign with a degree in Electrical Engineering. When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.'</p>
-		<p>I spend my free time designing and redesigning this website and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition. </p>
-		<p>I am currently participating in the Chicago Dev Bootcamp Cohort.</p>
-	</div>
-</div>
+    <!-- Define all of the tiles: -->
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<img src="https://stephanie-chou.github.io/unit1_projects/images/squarelandingpage.png">
+  			<p class="date">May 30, 2014</p>
+			<h4>Square</h4>
+			squareup.com</a> is one of the most beautiful visual web designs I have seen. While I don't use any of their services, I really their landing page and market page <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">read more</a></p>
+      	</div>
+      </div>
+    </div>
 
+     <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<p class="date">May 30, 2014</p>
+			<h4>DBC Culture</h4>
+			<p> <em>Intense.</em> The DBC culture is intense. It places great expectations on its participants for integrity and persistance.<a href="https://stephanie-chou.github.io/unit1_projects/week1_cultural.html">read more </a>
+
+      	</div>
+      </div>
+    </div>
+
+     <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<p class="date">June 2, 2014</p>
+			<h4>Positioning</h4>
+			<h3>Relative</h3>
+			<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them.
+			<a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<p class="date">June 2, 2014</p>
+			<h4> Learning Style</h4>
+			
+			<p>My thinking style was identified as concrete sequential. According to this I like:</p>
+			<li>following directions</li>
+			<li>order</li>
+			<li>getting facts</li>
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week3_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<p class="date">June 2, 2014</p>
+			<h4>Why JavaScript?</h4>
+			<h3>Easy, Easy and More Easy</h3>
+			<p> When you search "Why is JavaScript so popular?" you come across a myriad of answers. But the most common word you see is "Easy."
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week3_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<p class="date">June 8, 2014</p>
+			<h4>Arrays vs Hashes</h4>
+			<p> Array elements are accessed by indices. This is why arrays are good for look ups (searching for information). 
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week4_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 8, 2014</p>
+				<h4> Girls (Women) in Technology</h4>
+				<p> When I Googled "problems facing the tech world" The majority of the issues that came up were actually not technical, but cultural. 
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week4_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 15, 2014</p>
+				<h4> Pairing</h4>
+				<p> Being Ahead</p>
+				<p> Because I have had previous coding experience, I have had opportunity to teach and explain concepts to my pairs.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week5_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+1    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 15, 2014</p>
+				<h4> Vocabulary</h4>
+				<li> <strong>Class: </strong> A way of organizing information and producing new objects. Ruby has some built in classes we're already familiar with such as Array.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week5_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 18, 2014</p>
+				<h4> OOP vs Functional</h4>
+				<p> Object Oriented Programming is organized around objects and data rather than 'actions' and logic.</p>
+				<p> Advantages</p>
+				<li> Reuse of Classes: Classes definitions are reusable
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week6_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 18, 2014</p>
+				<h4> The Stereotype Threat</h4>
+				<p> I actually touched on this subject in a previous blog post when I wrote about an issue that the tech industry faces which is a lack of women.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week6_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 18, 2014</p>
+				<h4> The Stereotype Threat and Values</h4>
+
+				<p> Integrity is the most important personal value I hold. This is why DBC's policies about being 'in' or 'out of integrity' is extremely strong and particularly effective wording for me.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week7_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">June 23, 2014</p>
+				<h4> SQL Injection and Prevention</h4>
+				<p>SQL injection is a way of attacking a database. The malicious DQL code is intended to fool the application and convince it that it wants to run the malicious code which will cause unintended results.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week7_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+<p class="date">July 6, 2014</p>
+			<h4> Conflict</h4>
+			<ol>
+				<li> Discuss a time you had an emotional conflict with someone. What was it about? What happened? </li> 
+				<p> I had to google emotional conflict to find out what experience I have had that might qualify. An emotional conflict is "the presence of different and opposing emotions
+      		<a href="https://stephanie-chou.github.io/unit1_projects/week8_cultural.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+
+	<div class="box">
+      <div class="boxInner">
+      	<div class="content">
+			<p class="date">July 29, 2014</p>
+				<h4> Get off the Struggle Bus</h4>
+				<p> The struggle bus is frustration. It is unhappiness. It is the desire to keep going- but knowing that it is futile. 
+      		<a href="https://stephanie-chou.github.io/unit1_projects/phase1_week3_technical.html">read more</a>
+      	</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+      	<div class="content">
+			<p class="date">August 3, 2014</p>
+				<h4> A few things I didn't know about DBC, and now that I do, they seem worthy of sharing</h4>
+
+				<h3> The Daily Schedule</h3>
+				<li> 8:00 am- you are here before then. this is when the first announcements of the day are made. </li>
+      		<a href="https://stephanie-chou.github.io/unit1_projects/Phase1_end.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+	<div class="box">
+      <div class="boxInner">
+      	<div class="content">
+      		<img src="http://24.media.tumblr.com/tumblr_mbyoibaAat1qjssm1o5_1280.png">
+			<p class="date">August 4, 2014</p>
+				<h4> Why I Watch (and thoroughly enjoy) Adventure Time</h4>
+				
+				<p> My favorite episode is "I Remember You". I remember when it first aired and I watched it, I almost cried.
+      		<a href="https://stephanie-chou.github.io/unit1_projects/lightning_talk.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+	<div class="box">
+      <div class="boxInner">
+      	<div class="content">
+			<p class="date">August 5, 2014</p>
+				<h4> How to undo a Horrible Commit</h4>
+				<p> I have heard these 4 heartbreaking words, this death blow of a phrase twice <div class="quote"> Who pushed to Master?</div> 
+      		<a href="https://stephanie-chou.github.io/unit1_projects/lightning_talk_2.html">read more</a>
+      	</div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <!-- /#wrap -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script type="text/javascript">
+	 	$("#menu").click (function(){
+	 		$(".navSec").toggle("slow");
+
+
+	 		var toggleWidth = ($(".mainSec").width()/ $('.mainSec').parent().width() * 100);
+	 		 //alert(Math.round(toggleWidth));
+	 		toggleWidth = Math.round(toggleWidth) == 75 ? "100%" : "75%";
+	 		$('.mainSec').animate({ width: toggleWidth });
+	 	});
+
+	 </script>
 </body>
-
-
 </html>

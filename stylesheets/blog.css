@@ -1,5 +1,4 @@
 body{
-	color: #000;/*#303134;*/
 	height: 100%;
 	font-family: 'Open Sans', sans-serif; /*'Voltaire', sans-serif;*/
 	/*"http://upload.wikimedia.org/wikipedia/commons/d/dc/San_Francisco_-_Oakland_Bay_Bridge_At_Night.jpg"*/
@@ -10,6 +9,8 @@ body{
 	background-repeat: no-repeat;
 	background-color: #fff;
 	margin: 0px;
+	background-color: #000;
+		color: #fff;
 
 	/*"../images/baybridge.png"
 https://stephanie-chou.github.io/unit1_projects/images/baybridge.png"
@@ -94,8 +95,8 @@ footer p{
 	width: 25%;
 	background-color: #000;/*#C1C6D2;
 */	opacity: .85;
-/*	position: fixed;
-*/}
+	/*position: fixed;*/
+}
 
 .mainSec{
 	display: inline;
@@ -105,35 +106,19 @@ footer p{
 	min-height: 100%;
 }
 
-.navSec p{
-	color: #fff;
-}
-.navSec img{
-	display: inline-block;
-	float: center;
-	width: 90%;
-	height: width;
-	margin-top: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	border-radius:100%;
 
-}
 
 #menu{
+	 -webkit-filter: invert(100%);  
+
 	border-radius: 20%;
-/*	border:#000 4px solid;*/
+	border:#fff 4px solid;
 }
 
 .container{
 	width: 80%;
 	margin-left:auto;
 	margin-right: auto;
-}
-
-.navSec h4{
-	text-align: center;
 }
 
 
@@ -149,33 +134,40 @@ nav{
 	margin-right: 100px;
 /*	background-color: #808080;/*#C1C6D2;*/
 */	z-index: 99;
+
+}
+
+nav p{
+	color: gray;
+	text-align: center;
 }
 
 nav li{
 	padding: 10px;
+	list-style-type: none;
+	text-align: center
 	/*display: none;*/
 }
-
+nav ul{
+	padding:0px;
+}
 nav h4{
 	text-transform: uppercase;
-	color: #805415; /*#109d61;*/
-	text-align: center;
+/*	color: #805415; 
+*/	text-align: center;
 	font-weight: 100;
+	color: white;
 }
 
 
 
 nav img{
 	display: inline-block;
-	float: center;
-	width: 90%;
-	height: width;
-	margin-top: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	border-radius: 100%;
+	width: 50%;
+	padding:25%;
+	-webkit-filter:grayscale(70%);
 }
+
 
 article{
 	width: 100%;
@@ -216,7 +208,7 @@ pre {
 
 
 nav a{
-	color: #fff;
+	color: gray;
 }
 
 nav a:hover{
@@ -225,7 +217,7 @@ nav a:hover{
 
 a{
 	font-weight: 700;
-	color:#000;
+	color:gray;
 }
 
 
@@ -246,7 +238,8 @@ h2{
 	font-size: 2.33em;
 	line-height: 1.33em;
 	/*color: #109d61;*/
-	color:#805415;
+/*	color:#805415;
+*/ color : gray;
 	font-weight: 100;
 }
 
@@ -261,6 +254,7 @@ p{
 	line-height: 1.33em;
 	margin-top: 5px;
 	padding-top: 15px;
+	font-weight: 100;
 
 }
 
@@ -271,7 +265,8 @@ b{
 .date{
 	text-transform: uppercase;
 	/*color: #109d61;*/
-	color: #805415;
+	/*color: #805415;*/
+	color: gray;
 }
 
 table, th, td {
