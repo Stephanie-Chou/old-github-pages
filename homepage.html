@@ -16,6 +16,7 @@
 /*	   padding: 40px;
 */	   background: #0D0D0D;
 	   color: #fff;
+	   font-weight: 100;
 	}
 
     h4 {
@@ -25,9 +26,9 @@
     font-size: 2em;
     text-align: left;
     font-weight: 100;
-    /*color: #805415;*/
-    color : #fff;
-    padding: 0px;
+    color: #805415;
+/*    color : #fff;
+*/    padding: 0px;
     margin:0px;
   }
 	.wrap {
@@ -50,14 +51,18 @@
 	   bottom: 10px;
 	   overflow: hidden;
 	   background-color: #252525;
-	   -webkit-filter: grayscale(60%);
+	   
 	}
 
 	.boxInner .content{
 		padding: 10px;
 	}
+
 	.boxInner .content img {
+		-webkit-filter: grayscale(60%);
+	   max-height: 40%; 
 	   width: 100%;
+	   overflow: hidden;
 	}
 
 	.boxInner .titleBox {
@@ -88,7 +93,7 @@
 		bottom: 0px;
 		visibility: hidden;
 	}
-	.boxInner:hover{
+	.boxInner:hover img{
 		-webkit-filter: none;
 	}
 	.boxInner:hover .title{
@@ -109,21 +114,24 @@
 	   /* Tablet view: 2 tiles */
 	   .box {
 	      width: 50%;
-	      padding-bottom: 50%;
+	      padding-bottom: 100%;
 	   }
 	}
 	@media only screen and (max-width : 1050px) and (min-width : 651px) {
 	   /* Small desktop / ipad view: 3 tiles */
 	   .box {
-	      width: 33.3%;
-	      padding-bottom: 33.3%;
+	      width: 50%;
+	      padding-bottom: 100%;
+	   }
+	   h4{
+	   	font-size: 1em;
 	   }
 	}
 	@media only screen and (max-width : 1290px) and (min-width : 1051px) {
 	   /* Medium desktop: 4 tiles */
 	   .box {
-	      width: 25%;
-	      padding-bottom: 25%;
+	      width: 50%;
+	      padding-bottom: 75%;
 	   }
 	}
 
@@ -159,10 +167,12 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
-      		<img src="https://stephanie-chou.github.io/unit1_projects/images/squarelandingpage.png">
-  			<p class="date">May 30, 2014</p>
-			<h4>Square</h4>
-			squareup.com</a> is one of the most beautiful visual web designs I have seen. While I don't use any of their services, I really their landing page and market page <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">read more</a></p>
+	      	<img src="https://stephanie-chou.github.io/unit1_projects/images/squarelandingpage.png">
+      		<div class="text">
+	  			<p class="date">May 30, 2014</p>
+				<h4>Square</h4>
+				squareup.com</a> is one of the most beautiful visual web designs I have seen. While I don't use any of their services, I really their landing page and market page <a href="https://stephanie-chou.github.io/unit1_projects/week1_technical_blog.html">read more</a></p>
+			</div>
       	</div>
       </div>
     </div>
@@ -181,11 +191,15 @@
      <div class="box">
       <div class="boxInner">
       	<div class="content">
-      		<p class="date">June 2, 2014</p>
-			<h4>Positioning</h4>
-			<h3>Relative</h3>
-			<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them.
-			<a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">read more</a>
+      		
+      		<div class = "text">
+      			<img src="http://www.hellotecho.com/wp-content/uploads/2010/10/layers-300x225.png">
+      			<p class="date">June 2, 2014</p>
+				<h4>Positioning</h4>
+				<p>A relative object is positioned within the normal flow of the page. This means that they will not overlap and will be positioned relative to the other objects around them.
+				<a href="https://stephanie-chou.github.io/unit1_projects/week2_technical.html">read more</a>
+	      	</div>
+      		
       	</div>
       </div>
     </div>
@@ -193,13 +207,11 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
+      		<img src="http://www.openchurch.co.uk/images/gregorc.jpg">
       		<p class="date">June 2, 2014</p>
 			<h4> Learning Style</h4>
 			
-			<p>My thinking style was identified as concrete sequential. According to this I like:</p>
-			<li>following directions</li>
-			<li>order</li>
-			<li>getting facts</li>
+			<p>My thinking style was identified as concrete sequential. According to this I like: following directions, order, getting facts
       		<a href="https://stephanie-chou.github.io/unit1_projects/week3_cultural.html">read more</a>
       	</div>
       </div>
@@ -208,9 +220,9 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
+      		<img src="http://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/Javascript.png">
       		<p class="date">June 2, 2014</p>
 			<h4>Why JavaScript?</h4>
-			<h3>Easy, Easy and More Easy</h3>
 			<p> When you search "Why is JavaScript so popular?" you come across a myriad of answers. But the most common word you see is "Easy."
       		<a href="https://stephanie-chou.github.io/unit1_projects/week3_technical.html">read more</a>
       	</div>
@@ -220,6 +232,7 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
+      		<img src="">
       		<p class="date">June 8, 2014</p>
 			<h4>Arrays vs Hashes</h4>
 			<p> Array elements are accessed by indices. This is why arrays are good for look ups (searching for information). 
@@ -232,7 +245,8 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
-<p class="date">June 8, 2014</p>
+      		<img src="http://tech.co/wp-content/uploads/2012/07/Women-in-Tech.jpeg">
+				<p class="date">June 8, 2014</p>
 				<h4> Girls (Women) in Technology</h4>
 				<p> When I Googled "problems facing the tech world" The majority of the issues that came up were actually not technical, but cultural. 
       		<a href="https://stephanie-chou.github.io/unit1_projects/week4_cultural.html">read more</a>
@@ -256,7 +270,8 @@
 1    <div class="box">
       <div class="boxInner">
       	<div class="content">
-<p class="date">June 15, 2014</p>
+      		<img src="http://209.18.48.74/teacherpages/fconfer/myfiles/vocabulary%20icon.JPG">
+				<p class="date">June 15, 2014</p>
 				<h4> Vocabulary</h4>
 				<li> <strong>Class: </strong> A way of organizing information and producing new objects. Ruby has some built in classes we're already familiar with such as Array.
       		<a href="https://stephanie-chou.github.io/unit1_projects/week5_technical.html">read more</a>
@@ -266,7 +281,8 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
-<p class="date">June 18, 2014</p>
+
+			<p class="date">June 18, 2014</p>
 				<h4> OOP vs Functional</h4>
 				<p> Object Oriented Programming is organized around objects and data rather than 'actions' and logic.</p>
 				<p> Advantages</p>
@@ -278,6 +294,7 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
+      		<img src="http://www.sagent-solutions.com/wp-content/uploads/2013/11/stereotype-threat-320x202.png">
 <p class="date">June 18, 2014</p>
 				<h4> The Stereotype Threat</h4>
 				<p> I actually touched on this subject in a previous blog post when I wrote about an issue that the tech industry faces which is a lack of women.
@@ -310,11 +327,12 @@
     <div class="box">
       <div class="boxInner">
       	<div class="content">
-<p class="date">July 6, 2014</p>
+			<p class="date">July 6, 2014</p>
 			<h4> Conflict</h4>
 			<ol>
 				<li> Discuss a time you had an emotional conflict with someone. What was it about? What happened? </li> 
-				<p> I had to google emotional conflict to find out what experience I have had that might qualify. An emotional conflict is "the presence of different and opposing emotions
+			</ol>
+				<p> I had to google emotional conflict to find out what experience I have had that might qualify. An emotional conflict is
       		<a href="https://stephanie-chou.github.io/unit1_projects/week8_cultural.html">read more</a>
       	</div>
       </div>
@@ -335,7 +353,7 @@
       <div class="boxInner">
       	<div class="content">
 			<p class="date">August 3, 2014</p>
-				<h4> A few things I didn't know about DBC, and now that I do, they seem worthy of sharing</h4>
+				<h4> A few things I didn't know about DBC</h4>
 
 				<h3> The Daily Schedule</h3>
 				<li> 8:00 am- you are here before then. this is when the first announcements of the day are made. </li>
@@ -349,7 +367,7 @@
       	<div class="content">
       		<img src="http://24.media.tumblr.com/tumblr_mbyoibaAat1qjssm1o5_1280.png">
 			<p class="date">August 4, 2014</p>
-				<h4> Why I Watch (and thoroughly enjoy) Adventure Time</h4>
+				<h4> Adventure Time</h4>
 				
 				<p> My favorite episode is "I Remember You". I remember when it first aired and I watched it, I almost cried.
       		<a href="https://stephanie-chou.github.io/unit1_projects/lightning_talk.html">read more</a>
