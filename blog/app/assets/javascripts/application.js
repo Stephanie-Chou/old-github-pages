@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require underscore
 //= require angular
-//= require controllers/main/mainIndexCtrl
+//= require main
+//= require_tree .

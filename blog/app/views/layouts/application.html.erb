@@ -1,14 +1,23 @@
- <html ng-app="">
- <head>
-   <title>Application Title</title>
-   <%= stylesheet_link_tag    "application", media: "all" %>
-   <%= javascript_include_tag "application"%>
-   <%= csrf_meta_tags %>
- </head>
+<!DOCTYPE html>
+<html ng-app = "blogApp">
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
- <body>
-
-<%= yield %>
+  <nav>
+    <a href="/#"><li> Home </li></a>
+    <a href="/#/posts"><li> Blog Archive </li></a>
+    <li> Portfolio</li>
+  </nav>
+  <h1>Stephanie Chou</h1>
+  <div id = "container">
+    <div ng-view>
+    </div>
+  </div>
 
 </body>
 </html>
