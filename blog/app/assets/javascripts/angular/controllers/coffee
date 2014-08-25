@@ -1,0 +1,16 @@
+@blogApp.controller 'PostIndexCtrl', ['$scope', '$location', '$http', ($scope, $location ,$http) ->
+  $scope.posts = []
+  $http.get('./posts.json').success((data) ->
+    console.log(data)
+    $scope.posts = data
+    )
+]
+
+@blogApp.controller 'PostDetailCtrl', ['$scope', '$routeParams', ($scope, $routeParams) ->
+      $scope.post = {
+        id: $routeParams.id
+        title: $routeParams.title
+        date: $routeParams.date
+        text: $routeParams.text
+      }
+]
