@@ -1,10 +1,12 @@
-blogApp.controller ('PostIndexCtrl', ['$scope', function($scope){
-
+blogApp.factory('Post', ['$resource', function($resource){
+    return $resource('/posts.json',{},{
+      query: {method: 'GET'}
+    });
 }]);
 
+
 @blogApp.factory 'postService',['$scope', '$location', '$http', ($scope, $location, $http) ->
-  $scope.query = $http.get('./posts.json').success((data) ->
-    console.log("in query")
+  $scope.query =
   )
 ]
 
