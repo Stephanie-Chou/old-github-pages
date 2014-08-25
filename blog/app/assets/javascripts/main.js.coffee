@@ -8,7 +8,7 @@
     }).
     when('/posts/:id',{
       templateUrl: '../templates/posts/_.post_detail.html',
-      controller: 'PostDetailCtrl'
+      controller: 'PostIndexCtrl'
     }).
     otherwise({
       templateUrl: '../templates/home.html',
