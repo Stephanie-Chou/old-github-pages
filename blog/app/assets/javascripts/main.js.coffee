@@ -10,6 +10,9 @@
       templateUrl: '../templates/posts/_.post_detail.html',
       controller: 'PostIndexCtrl'
     }).
+    when('/portfolio',{
+      templateUrl: '../templates/portfolio.html'
+    }).
     otherwise({
       templateUrl: '../templates/home.html',
       controller: 'HomeCtrl'
