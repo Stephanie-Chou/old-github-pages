@@ -12,6 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require prettify
+//= require run_prettify
 //= require angular
 //= require main
 //= require_tree .
+
+$(document).ready(function() {
+    prettyPrint();
+});

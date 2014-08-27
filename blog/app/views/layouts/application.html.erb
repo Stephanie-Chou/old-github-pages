@@ -4,6 +4,7 @@
   <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <link rel="stylesheet" type="text/css" href="https://google-code-prettify.googlecode.com/svn/loader/skins/sunburst.css">
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -14,6 +15,9 @@
     <li> Portfolio</li>
   </nav>
   <h1>Stephanie Chou</h1>
+  <pre class="prettyprint lang-ruby">
+if true then p 'fun' end
+  </pre>
   <div id = "container">
     <div ng-view>
     </div>
