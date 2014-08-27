@@ -2,21 +2,20 @@
 Ensures that there is no untested code
 ## TDD cycle
 Red Green Refactor
-+ see code fail
-+ see code pass
-+ refactor
+* see code fail
+* see code pass
+* refactor
 
 ## Live Code!
 
 ### first test	
 ```ruby
-	class Cookie
-		attr_reader :type, :time_baked
-		def initialize (type)
-			@type = type
-		end
+class Cookie
+	attr_reader :type, :time_baked
+	def initialize (type)
+		@type = type
 	end
-
+end
 ```
 
 ```ruby
@@ -37,7 +36,6 @@ class Cookie
 		@time_baked = 0
 	end
 end
-
 ```
 ``` ruby
 it 'has a type' do
@@ -48,7 +46,6 @@ it 'has a baking time' do
 	cookie = Cookie.new('peanut butter')
 	expect(cookie.time_baked).to be_zero
 end
-
 ```
 Refactor! we assign cookie twice, so we should do stuff.
 ``` ruby
@@ -66,14 +63,12 @@ end
 
 
 ``` ruby
-
 describe 'baking' do
 	it 'should bake cookie a litle' do
 		cookie.bake!(4)
 		expect(cookie.time_baked).to eq(4)
 	end
 end
-
 ```
 
 
@@ -118,17 +113,16 @@ class Cookie
 		@time_baked += time
 	end
 end
-
 ```
 ### Test number 4
 
 ```ruby
-	describe 'cookie status' do
-		it 'should have a status' do
-			cookie.bake!(4)
-			expect(cookie.status).to eq(:undercooked)
-		end
+describe 'cookie status' do
+	it 'should have a status' do
+		cookie.bake!(4)
+		expect(cookie.status).to eq(:undercooked)
 	end
+end
 ```
 So we wrote the smallest amount of code...but is it really effective?
 ```ruby
@@ -152,16 +146,16 @@ end
 test again
 
 ```ruby
-	describe 'cookie status' do
-		it 'should have be undercookied' do
-			cookie.bake!(4)
-			expect(cookie.status).to eq(:undercooked)
-		end
-		it 'should tell me that it is properly cooked' do
-			cookie.bake!(7)
-			expect(cookie.status).to eq(:perfect)
-		end
+describe 'cookie status' do
+	it 'should have be undercookied' do
+		cookie.bake!(4)
+		expect(cookie.status).to eq(:undercooked)
 	end
+	it 'should tell me that it is properly cooked' do
+		cookie.bake!(7)
+		expect(cookie.status).to eq(:perfect)
+	end
+end
 ```
  but woah. 7 minute cookies are undercooked. so rewrite
 ```ruby
@@ -252,17 +246,17 @@ end
 ```
 Refactor!!!
 ```ruby
-	def status
-		if @time_baked<7
-			:undercooked
-		elseif @time_baked <10
-			:chewy
-		elseif @time_baked<12
-			:perfect
-		else
-			:burned
-		end
+def status
+	if @time_baked<7
+		:undercooked
+	elseif @time_baked <10
+		:chewy
+	elseif @time_baked<12
+		:perfect
+	else
+		:burned
 	end
+end
 ```
 
 ## Stub and Mock

@@ -1,7 +1,11 @@
+
 class Post < ActiveRecord::Base
 	def renderMarkdown
-		markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, fenced_code_blocks: true, prettify: true)
-		file = File.open("../blog/app/assets/markdown/#{self.title}",'r').read
-		markdown.render(file)
+		renderer = Redcarpet::Render::HTML.new()
+		markdown = Redcarpet::Markdown.new(renderer)
+		file = "../blog/app/assets/markdown/#{self.title}"
+		markdown.render(File.read(file))
+
+
 	end
 end
