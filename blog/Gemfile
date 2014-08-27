@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
-# gem 'foundation-rails'
+gem 'foundation-rails'
 gem 'redcarpet'
 gem 'github-markup'
 # Use ActiveModel has_secure_password

@@ -12,10 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require prettify
+//= require run_prettify
+//= require init
 //= require angular
 //= require main
 //= require_tree .
 
-$(document).ready(function(){
-	
-});
+
+	// $('body').find('pre').addClass("prettyPrint lang-ruby prettyprinted")
+

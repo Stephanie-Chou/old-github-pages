@@ -5,7 +5,7 @@ Ensures that there is no untested code
 
 ### first test	
 
-```
+```ruby
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
