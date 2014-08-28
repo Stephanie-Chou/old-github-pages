@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    
     # posts should have an abstract which gets stored. it is pulled out of the markdown.
     # all a user has to do is write the markdown and then the rest is stored in the db
     # returnVal = Post.findMarkdowns
@@ -11,7 +12,6 @@ class PostsController < ApplicationController
 
 
   def show
-
     @post = Post.find(params[:id])
     file = @post.renderMarkdown
     respond_to do |format|

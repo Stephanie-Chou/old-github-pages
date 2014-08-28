@@ -9,6 +9,11 @@ blogApp.controller('PostIndexCtrl', ['$scope', '$location', '$http', '$routePara
   }
 ])
 
+// $(document).on("click", 'h3', function(e){
+// 	e.preventDefault();
+// 	$(this).parents('li').attr('id');
+// });
+
 blogApp.controller('PostDetailCtrl',['$scope', '$location', '$http','$routeParams', function($scope, $location, $http, $routeParams){
 	$scope.file;
 	console.log("detail ctrl");

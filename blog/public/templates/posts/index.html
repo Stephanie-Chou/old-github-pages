@@ -1,5 +1,6 @@
 <h1>Blog Archive</h1>
 <hr>
   <ul ng-repeat="post in posts" class = "no-bullet">
-    <li id = '{{post.id }}'><p class="right">{{post.date}}</p><a href="#/posts/{{post.id}}" ><h3>{{post.title }}</h3></a><p> {{post.abstract}}</p></li>
+    <li id = '{{post.id }}' class = "post panel"><p class="right">{{post.date}}</p><a href="#/posts/{{post.id}}"><h3>{{post.title }}</h3></a><p> {{post.abstract}}</p></li>
   </ul>
+<!-- href="#/posts/{{post.id}}"  -->
