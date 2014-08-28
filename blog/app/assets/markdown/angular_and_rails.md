@@ -39,7 +39,7 @@ You have a frontend controller to tell everybody when to render. It looks like a
 
 * Module: a container for the different parts of an app including controllers, services, filters, directives
 
-```
+```javascript
 blogApp = angular.module('blogApp', [])
 blogApp.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
@@ -65,7 +65,7 @@ blogApp.config(['$routeProvider', ($routeProvider) ->
 To display all the posts, we break it up into two Models. We have a collection of posts, and then a post.
 Post
 
-```
+```javascript
 function Post(options){
 	this.title = options.title
 	// etc etc etc
@@ -73,7 +73,7 @@ function Post(options){
 ```
 Post Collection
 
-```
+```javascript
 function PostCollection(){
   this.model = Post;
   this.models = [];
@@ -104,7 +104,7 @@ In angular, that AJAX call and the multiple models can all get condensed into on
 
 The controller is where we make the AJAX call. You store your collection of posts in a single array called '$scope.posts'.
 
-```
+```javascript
 blogApp.controller('PostIndexCtrl', ['$scope', '$location', '$http', '$routeParams', function($scope, $location ,$http, $routeParams){
 		// we store our collection of posts in here
     $scope.posts = [];
@@ -123,7 +123,7 @@ blogApp.controller('PostIndexCtrl', ['$scope', '$location', '$http', '$routePara
 In your view, you have to render the collection and each post in the collection.
 CollectionView
 
-```
+```javascript
 function PostsView(collection){
   this.collection = collection;
   this.$el = $("<div></div>");
@@ -141,7 +141,7 @@ PostsView.prototype.render = function() {
 
 Post Row View
 
-```
+```javascript
 function PostRowView(model){
   this.model = model;
   this.$el = $("<div></div>");
