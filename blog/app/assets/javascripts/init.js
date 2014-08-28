@@ -1,5 +1,4 @@
 	
-console.log("inhere")
 // var App = {
 //   init: function(){
 //     this.$el= $("#content");

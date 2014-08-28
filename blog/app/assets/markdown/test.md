@@ -5,7 +5,7 @@ Ensures that there is no untested code
 
 ### first test	
 
-```ruby
+```lang-ruby
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -22,5 +22,6 @@ describe Cookie do
 	end
 end
 ```
+* bullet point?
 
-
+<iframe width="420" height="315" src="//www.youtube.com/embed/-sSyakmt_LU" frameborder="0" allowfullscreen></iframe>

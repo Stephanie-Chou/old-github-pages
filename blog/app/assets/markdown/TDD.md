@@ -2,6 +2,7 @@
 Ensures that there is no untested code
 ## TDD cycle
 Red Green Refactor
+
 * see code fail
 * see code pass
 * refactor
@@ -9,7 +10,7 @@ Red Green Refactor
 ## Live Code!
 
 ### first test	
-```ruby
+```
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -18,7 +19,7 @@ class Cookie
 end
 ```
 
-```ruby
+```
 describe Cookie do
 	it 'has a type' do
 		cookie = Cookie.new('peanut butter')
@@ -28,7 +29,7 @@ end
 ```
 
 ### second test
-```ruby
+```
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -37,7 +38,7 @@ class Cookie
 	end
 end
 ```
-``` ruby
+``` 
 it 'has a type' do
 	cookie = Cookie.new('peanut butter')
 	expect(cookie.type).to eq ('peanut butter')
@@ -48,7 +49,7 @@ it 'has a baking time' do
 end
 ```
 Refactor! we assign cookie twice, so we should do stuff.
-``` ruby
+``` 
 let (:cookie){Cookie.new('peanut butter')}
 	it 'has a type' do
 		expect(cookie.type).to eq ('peanut butter')
@@ -62,7 +63,7 @@ end
 ### 3rd time!
 
 
-``` ruby
+``` 
 describe 'baking' do
 	it 'should bake cookie a litle' do
 		cookie.bake!(4)
@@ -72,7 +73,7 @@ end
 ```
 
 
-```ruby	
+```	
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -87,7 +88,7 @@ end
 
 But what if we bake a little more?
 
-``` ruby
+``` 
 describe 'baking' do
 	it 'should bake cookie a litle' do
 		cookie.bake!(4)
@@ -101,7 +102,7 @@ describe 'baking' do
 end
 ```
 The smallest amount of code changes what is happening!
-```ruby
+```
 
 class Cookie
 	attr_reader :type, :time_baked
@@ -116,7 +117,7 @@ end
 ```
 ### Test number 4
 
-```ruby
+```
 describe 'cookie status' do
 	it 'should have a status' do
 		cookie.bake!(4)
@@ -125,7 +126,7 @@ describe 'cookie status' do
 end
 ```
 So we wrote the smallest amount of code...but is it really effective?
-```ruby
+```
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -145,7 +146,7 @@ end
 
 test again
 
-```ruby
+```
 describe 'cookie status' do
 	it 'should have be undercookied' do
 		cookie.bake!(4)
@@ -158,7 +159,7 @@ describe 'cookie status' do
 end
 ```
  but woah. 7 minute cookies are undercooked. so rewrite
-```ruby
+```
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -181,7 +182,7 @@ end
 ```
 
 can we burn cookies?
-```ruby
+```
 describe 'cookie status' do
 	it 'should have be undercookied' do
 		cookie.bake!(4)
@@ -198,7 +199,7 @@ describe 'cookie status' do
 end
 ```
 
-```ruby
+```
 class Cookie
 	attr_reader :type, :time_baked
 	def initialize (type)
@@ -223,7 +224,7 @@ end
 ```
 woah woah it broke.
 
-```ruby
+```
 describe 'cookie status' do
 	it 'should have be undercookied' do
 		cookie.bake!(4)
@@ -245,7 +246,7 @@ describe 'cookie status' do
 end
 ```
 Refactor!!!
-```ruby
+```
 def status
 	if @time_baked<7
 		:undercooked
@@ -272,7 +273,7 @@ When to use a mock? When you are trying to make a decision where the test doesn'
 ### First go
 
 if we do this, we have a dependency on cookie being correctly initialized.
-```ruby
+```
 describe Oven do
 	it 'takes cookies' do
 		oven = Oven.new
@@ -281,7 +282,7 @@ describe Oven do
 end
 ```
 So we should use a mock. but in rspec, we call mock a double()... as in doppelganger. It takes an argument that gives that double a name.
-```ruby
+```
 describe Oven do
 	it 'takes anything' do
 		oven = Oven.new
@@ -290,7 +291,7 @@ describe Oven do
 	end
 end
 ```
-```ruby
+```
 def initialize
 	@contents = []
 end
@@ -306,7 +307,7 @@ end
 ### write another test
 
 Using stub. Note, you can't chain stubs on doubles
-```ruby
+```
 describe Oven do
 	it 'takes anything' do
 		oven = Oven.new
@@ -321,7 +322,7 @@ describe Oven do
 	end
 end
 ```
-```ruby
+```
 def initialize
 	@contents = []
 end
@@ -343,7 +344,7 @@ end
 ```
 
 refactor! because not raising an error and vague it description is not good enough. Note that the ordering got flipped, the assertion is first.
-```ruby
+```
 describe Oven do
 	let(:oven){Oven.new}
 	let(:cookie){double('Cookie')}
