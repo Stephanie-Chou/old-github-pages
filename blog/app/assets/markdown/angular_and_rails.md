@@ -8,7 +8,8 @@ What have we been doing before? When we create a fully fledged web app with a ba
 Lets say you want to get a page that shows all your blog posts. It looks like as follows:
 ##Controllers
 ####Non Angular Controller of sorts
-```
+
+```javascript
 var App = {
   init: function(){
     this.$el= $("#content");
